@@ -1,0 +1,48 @@
+import { ButtonBlue, ButtonWhite, Footer, Header } from "@/components/index";
+
+import Image from "next/image";
+import Link from "next/link";
+
+export default function Home() {
+  return (
+    <main className=" min-h-screen bg-white  relative overflow-hidden  flex flex-col">
+      <header className=" flex justify-between flex-1 p-5  min-h-[20vh]">
+        <Header />
+        <div className="flex gap-4">
+          <Link href="/signin">
+            <ButtonWhite />
+          </Link>
+          <Link href="/dashboard">
+            <ButtonBlue />
+          </Link>
+        </div>
+      </header>
+      <section className="min-h-[80vh] min-w-full flex  justify-between items-center gap-12">
+        <div className="flex items-center flex-col flex-1">
+          <h1 className="text-[70px] font-bold text-center">
+            Getting <span className="text-[#0093EF]">Quality</span>
+            <br></br> Education Is Now<br></br> More
+            <span className="text-[#0093EF]"> Easy</span>
+          </h1>
+          <div className="flex gap-2 mt-12 items-center justify-center  ">
+            <Link href="/dashboard">
+              <ButtonBlue />
+            </Link>
+            <Link href="/signin">
+              <ButtonWhite />
+            </Link>
+          </div>
+        </div>
+        <div className="flex-1">
+          <Image
+            src="/home.png"
+            width={600}
+            height={600}
+            alt="Main Screen Image"
+          />
+        </div>
+      </section>
+      <Footer />
+    </main>
+  );
+}
