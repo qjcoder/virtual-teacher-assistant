@@ -1,4 +1,4 @@
-import { ButtonBlue, Header } from "@/components";
+import { ButtonBlue, ButtonWhite, Header } from "@/components";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -62,17 +62,18 @@ const Login = () => {
               height={100}
             />
           </div>
-          <div className="flex">
-            <button> As a Teacher</button>
+          <div className="flex items-center justify-between gap-4">
+            <ButtonBlue text="As a Teacher" />
             <p>or</p>
-            <button> As a Student</button>
+            <ButtonWhite text="As a Student" />
           </div>
           <div>form</div>
           <div>
-            <ButtonBlue />
+            <ButtonBlue text="Signup" />
           </div>
           <p>
-            Already have and account? <span>Login</span>
+            Already have and account?{" "}
+            <span className="text-[#0093EF]">Login</span>
           </p>
         </div>
       </section>

@@ -10,10 +10,10 @@ export default function Home() {
         <Header />
         <div className="flex gap-4">
           <Link href="/signin">
-            <ButtonWhite />
+            <ButtonWhite text="Signin" />
           </Link>
           <Link href="/dashboard">
-            <ButtonBlue />
+            <ButtonBlue text="Get Started" />
           </Link>
         </div>
       </header>
@@ -26,10 +26,10 @@ export default function Home() {
           </h1>
           <div className="flex gap-2 mt-12 items-center justify-center  ">
             <Link href="/dashboard">
-              <ButtonBlue />
+              <ButtonBlue text="Get Started" />
             </Link>
             <Link href="/signin">
-              <ButtonWhite />
+              <ButtonWhite text="Signin" />
             </Link>
           </div>
         </div>
