@@ -61,11 +61,11 @@ const Login = () => {
                 />
               </div>
               <div className="flex items-center justify-between gap-2 my-8  ">
-                <ButtonBlue text="As a Teacher" />
-                <p>or</p>
-                <Link href="/signin/student">
-                  <ButtonWhite text="As a Student" />
+                <Link href="/signin">
+                  <ButtonWhite text="As a Teacher" />
                 </Link>
+                <p>or</p>
+                <ButtonBlue text="As a Student" />
               </div>
               {/* Form */}
               <div className=" flex flex-col items-center gap-8">
@@ -101,13 +101,13 @@ const Login = () => {
                   </div>
                 </form>
                 <div className="mb-6">
-                  <Link href="/dashboard/teacher">
+                  <Link href="/dashboard/student">
                     <ButtonBlue text="Sign in" />
                   </Link>
                 </div>
               </div>
               {/* End of Form */}
-              <Link href="/signup" className="text-[#0093EF] ml-52">
+              <Link href="/signup/student" className="text-[#0093EF] ml-52">
                 Forget Password?
               </Link>
             </div>

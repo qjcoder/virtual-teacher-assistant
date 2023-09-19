@@ -52,7 +52,7 @@ const Footer = () => {
         <p className="text-[#FCFCFC]  text-base font-normal ">
           <span className="text-[#337AB7]">Phone:</span> +569 987 142
         </p>
-        <p className="text-[#FFFFFF] text-base font-normal  ">
+        <p className="text-[#FFFFFF] text-base font-normal ">
           <span className="text-[#337AB7]">Email: virtualteacherasst</span>
           @email.com
         </p>

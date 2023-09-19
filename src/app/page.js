@@ -6,20 +6,20 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className=" min-h-screen bg-white  relative overflow-hidden  flex flex-col">
-      <header className=" flex justify-between flex-1 p-5  min-h-[20vh]">
+      <header className=" flex justify-between flex-1 p-5  min-h-[10vh] items-center">
         <Header />
         <div className="flex gap-4">
           <Link href="/signin">
-            <ButtonWhite text="Signin" />
+            <ButtonWhite text="Sign in" />
           </Link>
           <Link href="/dashboard">
             <ButtonBlue text="Get Started" />
           </Link>
         </div>
       </header>
-      <section className="min-h-[80vh] min-w-full flex  justify-between items-center gap-12">
+      <section className="min-h-[90vh] min-w-full flex  justify-between items-center gap-12">
         <div className="flex items-center flex-col flex-1">
-          <h1 className="text-[70px] font-bold text-center">
+          <h1 className="text-[80px] font-bold text-center">
             Getting <span className="text-[#0093EF]">Quality</span>
             <br></br> Education Is Now<br></br> More
             <span className="text-[#0093EF]"> Easy</span>
@@ -29,7 +29,7 @@ export default function Home() {
               <ButtonBlue text="Get Started" />
             </Link>
             <Link href="/signin">
-              <ButtonWhite text="Signin" />
+              <ButtonWhite text="Sign in" />
             </Link>
           </div>
         </div>

@@ -2,7 +2,7 @@ import { ButtonBlue, ButtonWhite, Header } from "@/components";
 import Image from "next/image";
 import Link from "next/link";
 
-const Login = () => {
+const Register = () => {
   return (
     <div className=" min-h-screen bg-white flex flex-col p-5">
       <Header />
@@ -19,7 +19,7 @@ const Login = () => {
         </div>
         {/* Right  */}
         <div className="flex flex-1">
-          <div className="flex flex-col   bg-[#8EAFC2] p-5 rounded-3xl  h-[600px] w-[500px] ">
+          <div className="flex flex-col   bg-[#8EAFC2] p-5 rounded-3xl  h-[650px] w-[500px] ">
             <div className="flex items-center flex-col">
               <Image
                 className="w-[90px] h-[90px] p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500 mb-2"
@@ -29,13 +29,13 @@ const Login = () => {
                 height={88}
               />
               <p className="text-base font-roboto font-normal mt-3">
-                Login account with
+                Create account with
               </p>
-              <div className="flex gap-6 mt-6">
+              <div className="flex gap-6 mt-3">
                 {/* <!-- Github --> */}
                 <Link href={"#"}>
                   <Image
-                    className="w-10 h-10 p-1 rounded-full ring-2 bg-white "
+                    className="w-10 h-10 p-1 rounded-full ring-2 bg-white"
                     src="/github.png"
                     alt="github-logo"
                     width={50}
@@ -60,15 +60,15 @@ const Login = () => {
                   height={100}
                 />
               </div>
-              <div className="flex items-center justify-between gap-2 my-8  ">
-                <ButtonBlue text="As a Teacher" />
-                <p>or</p>
-                <Link href="/signin/student">
-                  <ButtonWhite text="As a Student" />
+              <div className="flex items-center justify-between gap-2 my-5  ">
+                <Link href="/signup">
+                  <ButtonWhite text="As a Teacher" />
                 </Link>
+                <p>or</p>
+                <ButtonBlue text="As a Student" />
               </div>
               {/* Form */}
-              <div className=" flex flex-col items-center gap-8">
+              <div className=" flex flex-col items-center gap-6">
                 <form className="flex flex-col gap-4">
                   <div className="flex justify-center-center gap-5  ">
                     <Image
@@ -81,6 +81,20 @@ const Login = () => {
                     <input
                       type="text"
                       placeholder="Name"
+                      className="w-[340px] h-[38px] px-4 py-2 text-[#797979] bg-[#F9F7F7] border border-gray-300 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                    />
+                  </div>
+                  <div className="flex justify-center-center gap-5  ">
+                    <Image
+                      src="/email.png"
+                      alt="Email Icon"
+                      width={32}
+                      height={32}
+                      className="w-10 h-10 p-1 rounded-full bg-white border text-center"
+                    />
+                    <input
+                      type="text"
+                      placeholder="Email"
                       className="w-[340px] h-[38px] px-4 py-2 text-[#797979] bg-[#F9F7F7] border border-gray-300 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500"
                     />
                   </div>
@@ -99,17 +113,33 @@ const Login = () => {
                       className="w-[340px] h-[38px] px-4 py-2 text-[#797979] bg-[#F9F7F7] border border-gray-300 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500"
                     />
                   </div>
+
+                  <div className="flex justify-center-center gap-5  ">
+                    <Image
+                      src="/password.png"
+                      alt="User Icon"
+                      width={52}
+                      height={52}
+                      className=" -rotate-180 w-10 h-10 p-1 rounded-full bg-white border text-center"
+                    />
+                    <input
+                      type="text"
+                      placeholder="Confirm Password"
+                      className="w-[340px] h-[38px] px-4 py-2 text-[#797979] bg-[#F9F7F7] border border-gray-300 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                    />
+                  </div>
                 </form>
                 <div className="mb-6">
-                  <Link href="/dashboard/teacher">
-                    <ButtonBlue text="Sign in" />
-                  </Link>
+                  <ButtonBlue text="Signup" />
                 </div>
               </div>
               {/* End of Form */}
-              <Link href="/signup" className="text-[#0093EF] ml-52">
-                Forget Password?
-              </Link>
+              <p>
+                Already have an account? {""}
+                <Link href="/signin" className="text-[#0093EF]">
+                  Login
+                </Link>
+              </p>
             </div>
           </div>
         </div>
@@ -118,4 +148,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Register;
