@@ -12,9 +12,7 @@ const Facultyportal = () => {
         </p>
       </div>
       <div class=" rounded overflow-hidden shadow-lg flex items-center">
-        <div class="  rounded overflow-hidden shadow-lg justify-center flex">
-          <CourseCard />
-        </div>
+        <CourseCard />
       </div>
     </main>
   );

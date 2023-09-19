@@ -61,10 +61,14 @@ const Login = () => {
                 />
               </div>
               <div className="flex items-center justify-between gap-2 my-8  ">
-                <ButtonBlue text="As a Teacher" />
+                <ButtonBlue text="As a Teacher" borderRadius="20px" />
                 <p>or</p>
                 <Link href="/signin/student">
-                  <ButtonWhite text="As a Student" />
+                  <ButtonWhite
+                    text="As a Student"
+                    borderRadius="20px"
+                    color="white"
+                  />
                 </Link>
               </div>
               {/* Form */}
@@ -102,7 +106,7 @@ const Login = () => {
                 </form>
                 <div className="mb-6">
                   <Link href="/dashboard/teacher">
-                    <ButtonBlue text="Sign in" />
+                    <ButtonBlue text="Sign in" borderRadius="20px" />
                   </Link>
                 </div>
               </div>

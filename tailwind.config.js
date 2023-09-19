@@ -18,7 +18,16 @@ module.exports = {
       xl: "1280px",
       "2xl": "1536px",
     },
-    extend: {},
+    extend: {
+      colors: {
+        main: "#e002a2",
+        second: "#47019d",
+        three: "#e00256",
+        black: "#212121",
+        white: "#ffffff",
+        gray: "#808080e2",
+      },
+    },
   },
   plugins: [require("tailwind-clip-path")],
 };

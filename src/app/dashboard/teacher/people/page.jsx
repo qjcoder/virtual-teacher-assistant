@@ -1,7 +1,12 @@
+import CourseCard from "@/components/course-card";
 import React from "react";
 
 const People = () => {
-  return <div></div>;
+  return (
+    <div>
+      <CourseCard />
+    </div>
+  );
 };
 
 export default People;
