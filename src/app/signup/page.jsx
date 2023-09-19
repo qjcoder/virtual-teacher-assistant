@@ -23,7 +23,7 @@ const Register = () => {
             <div className="flex items-center flex-col">
               <Image
                 className="w-[90px] h-[90px] p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500 mb-2"
-                src="/profile.jpg"
+                src="/admin.png"
                 alt="Profile Picture"
                 width={88}
                 height={88}
