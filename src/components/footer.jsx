@@ -12,21 +12,21 @@ const Footer = () => {
           winged over given forth fruit.
         </p>
         <div className="flex gap-2 items-center ">
-          <div className="border border-[#4FACFE]  bg-transparent w-[370px] h-[53px] items-center">
+          <div className="">
             <input
               type="text"
               placeholder="Enter your email"
-              className="bg-transparent  text-sm font-normal outline-8 text-white  "
+              className="text-sm font-normal outline-none text-white border border-[#4FACFE]  bg-transparent w-[370px] h-[40px] items-center p-2"
             />
           </div>
-          <div className="text-white bg-gradient-to-r from-[#4FACFE] to-[#00F2FE] rounded-[4px] cursor-pointer w-[42px] h-[42px] items-center text-center ">
+          <div className="text-white bg-gradient-to-r from-[#4FACFE] to-[#00F2FE] rounded-[4px] cursor-pointer w-[36px] h-[36px] items-center text-center ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               strokeWidth={2}
               stroke="currentColor"
-              className="w-[40px] h-[40px]"
+              className="w-[36px] h-[36px]"
             >
               <path
                 strokeLinecap="round"

@@ -18,13 +18,15 @@ const NewClassCard = () => {
           <span className="text-[#263238] text-sm font-medium">0</span>
           <span className="text-[#263238] text-sm font-medium">students</span>
         </div>
-        <ButtonBlue
-          text="Create New Class"
-          className="text-[16px] font-bold "
-          borderRadius="6px"
-          height="42px"
-          width="158px"
-        />
+        <Link href="/dashboard/teacher/createcourse">
+          <ButtonBlue
+            text="Create New Class"
+            className="text-[16px] font-bold "
+            borderRadius="6px"
+            height="42px"
+            width="158px"
+          />
+        </Link>
       </div>
     </div>
   );
