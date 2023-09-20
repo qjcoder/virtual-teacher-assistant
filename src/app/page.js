@@ -13,7 +13,12 @@ export default function Home() {
             <ButtonWhite text="Sign in" color="white" borderRadius="20px" />
           </Link>
           <Link href="/dashboard">
-            <ButtonBlue text="Get Started" borderRadius="20px" />
+            <ButtonBlue
+              text="Get Started"
+              borderRadius="20px"
+              height="40px"
+              width="120px"
+            />
           </Link>
         </div>
       </header>
@@ -26,7 +31,12 @@ export default function Home() {
           </h1>
           <div className="flex gap-2 mt-12 items-center justify-center  ">
             <Link href="/dashboard">
-              <ButtonBlue text="Get Started" borderRadius="20px" />
+              <ButtonBlue
+                text="Get Started"
+                borderRadius="20px"
+                height="40px"
+                width="120px"
+              />
             </Link>
             <Link href="/signin">
               <ButtonWhite text="Sign in" color="white" borderRadius="20px" />

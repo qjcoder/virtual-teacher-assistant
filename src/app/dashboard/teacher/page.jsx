@@ -1,6 +1,5 @@
-import { ButtonBlue } from "@/components";
+import NewClassCard from "@/components/NewClassCard";
 import CourseCard from "@/components/course-card";
-import Image from "next/image";
 
 const Facultyportal = () => {
   return (
@@ -11,8 +10,11 @@ const Facultyportal = () => {
           Lorem ipsum dolor sit amet
         </p>
       </div>
-      <div class=" rounded overflow-hidden shadow-lg flex items-center">
+      <div className=" rounded overflow-hidden shadow-lg flex  gap-6">
         <CourseCard />
+        <CourseCard />
+        <CourseCard />
+        <NewClassCard />
       </div>
     </main>
   );

@@ -69,7 +69,12 @@ const Register = () => {
                   />
                 </Link>
                 <p>or</p>
-                <ButtonBlue text="As a Student" borderRadius="20px" />
+                <ButtonBlue
+                  text="As a Student"
+                  borderRadius="20px"
+                  height="40px"
+                  width="120px"
+                />
               </div>
               {/* Form */}
               <div className=" flex flex-col items-center gap-6">
@@ -134,7 +139,12 @@ const Register = () => {
                   </div>
                 </form>
                 <div className="mb-6">
-                  <ButtonBlue text="Signup" borderRadius="20px" />
+                  <ButtonBlue
+                    text="Signup"
+                    borderRadius="20px"
+                    height="40px"
+                    width="120px"
+                  />
                 </div>
               </div>
               {/* End of Form */}

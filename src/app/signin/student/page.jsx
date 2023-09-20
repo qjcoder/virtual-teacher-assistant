@@ -69,7 +69,12 @@ const Login = () => {
                   />
                 </Link>
                 <p>or</p>
-                <ButtonBlue text="As a Student" borderRadius="20px" />
+                <ButtonBlue
+                  text="As a Student"
+                  borderRadius="20px"
+                  height="40px"
+                  width="120px"
+                />
               </div>
               {/* Form */}
               <div className=" flex flex-col items-center gap-8">
@@ -106,7 +111,12 @@ const Login = () => {
                 </form>
                 <div className="mb-6">
                   <Link href="/dashboard/student">
-                    <ButtonBlue text="Sign in" borderRadius="20px" />
+                    <ButtonBlue
+                      text="Sign in"
+                      borderRadius="20px"
+                      height="40px"
+                      width="120px"
+                    />
                   </Link>
                 </div>
               </div>

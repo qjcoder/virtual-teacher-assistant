@@ -1,13 +1,12 @@
 import Image from "next/image";
-import Link from "next/link";
-import React from "react";
+
 import { ButtonBlue } from "../components/index";
 
 const CourseCard = () => {
   return (
-    <div class=" w-[296px] min-h-max rounded-md overflow-hidden shadow-lg  items-center justify-between flex flex-col py-4">
+    <div className=" w-[296px] min-h-max rounded-md overflow-hidden shadow-lg  items-center justify-between flex flex-col py-4">
       <Image
-        class="w-full h-40"
+        className="w-full h-40 rounded-t-2xl"
         src="/image.png"
         alt="Course 1"
         height={200}
@@ -16,19 +15,19 @@ const CourseCard = () => {
       <div className="px-4 items-center">
         <div className=" flex rounded-full  bg-white  -translate-y-4 translate-x-5  h-10 w-[225px] items-center  ">
           <div className="flex  justify-between">
-            <div class="z-40">
+            <div className="z-40">
               <Image src="/Ander.png" width={30} height={30} />
             </div>
-            <div class="z-30 -ml-3 ">
+            <div className="z-30 -ml-3 ">
               <Image src="/Bartender.png" width={30} height={30} />
             </div>
-            <div class="z-20 -ml-3">
+            <div className="z-20 -ml-3">
               <Image src="/Bartender.png" width={30} height={30} />
             </div>
-            <div class="z-10 -ml-3">
+            <div className="z-10 -ml-3">
               <Image src="/Bartender.png" width={30} height={30} />
             </div>
-            <div class="z-0 -ml-3  ">
+            <div className="z-0 -ml-3  ">
               <Image src="/Bartender.png" width={30} height={30} />
             </div>
           </div>
@@ -40,20 +39,20 @@ const CourseCard = () => {
             <sup className="text-[#263238] text-sm font-medium">students</sup>
           </div>
         </div>
-        <div class=" flex  flex-col justify-between gap-2">
+        <div className=" flex  flex-col justify-between gap-2">
           <p className="text-[10px] font-normal text-[#777795] ">
             1 - 28 July 2022
           </p>
-          <div class="font-bold text-xl mb-2">
+          <div className="font-bold text-xl mb-2">
             Product Management Basic - Course
           </div>
-          <p class="text-gray-700 text-base">
+          <p className="text-gray-700 text-base">
             Product Management Masterclass, you will learn with Sarah Johnson -
             Head of Product Customer Platform Gojek Indonesia.
           </p>
           <ButtonBlue
             text="Details"
-            className="text-[10px] "
+            className="text-[10px] text-center items-center justify-center "
             borderRadius="6px"
             height="34px"
             width="79px"
