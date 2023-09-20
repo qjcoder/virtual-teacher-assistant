@@ -10,7 +10,7 @@ const Facultyportal = () => {
           Lorem ipsum dolor sit amet
         </p>
       </div>
-      <div className=" rounded overflow-hidden shadow-lg flex  gap-6">
+      <div className=" rounded overflow-hidden shadow-lg flex pb-6 px-6 gap-6">
         <CourseCard />
         <CourseCard />
         <CourseCard />
