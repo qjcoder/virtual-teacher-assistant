@@ -8,6 +8,7 @@ const ButtonWhite = (props) => {
       style={{
         backgroundColor: props.color,
         borderRadius: props.borderRadius,
+        borderColor: props.borderColor,
       }}
     >
       {props.text}
