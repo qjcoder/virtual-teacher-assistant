@@ -5,7 +5,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <header className="h-[120px] w-full flex justify-between items-center px-10 mb-1">
+        <header className="p-3 w-full flex justify-between items-center px-10 mb-1">
           <div className="text-center text-xl font-bold">
             <span className=" text-[#171063]">Virtual</span>
             <br></br>

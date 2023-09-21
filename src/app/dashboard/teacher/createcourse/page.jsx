@@ -26,7 +26,7 @@ const CreateCourse = () => {
                   Contact
                 </h1>
               </div>
-              <div className="flex gap-4">
+              <div className="flex gap-8">
                 <form className="flex flex-col">
                   <label className="mb-2 text-base font-medium text-[#083A50]">
                     Course Name
