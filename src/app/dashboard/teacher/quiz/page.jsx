@@ -1,4 +1,5 @@
 import { ButtonBlue, ButtonWhite } from "@/components";
+import Successcart from "@/components/success-cart";
 const Quiz = () => {
   return (
     <main className="min-h-screen bg-[#F9F9F9] w-[1300px] ">
