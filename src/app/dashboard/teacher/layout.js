@@ -13,10 +13,10 @@ export default function RootLayout({ children }) {
           </div>
           <div className="flex gap-6 items-center  ">
             <Image
-              src="/admin.png" //Size of the discuss later
+              src="/profile.jpg" //Size of the discuss later
               width={57}
               height={57}
-              className="rounded-md"
+              className="w-[57px] h-[57px] border-solid border-1 border-indigo-600 rounded-xl object-cover drop-shadow-md outline-none "
             />
             <div className="flex flex-col items-center ">
               <span className="text-base font-bold">Haseeb Ahmed</span>
