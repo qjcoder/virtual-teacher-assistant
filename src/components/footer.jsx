@@ -3,42 +3,42 @@ import React from "react";
 const Footer = () => {
   return (
     // Footer
-    <div className="flex flex-1 font-roboto bg-[#0A0A0A] justify-between px-6 py-4">
+    <div className="flex flex-1 justify-between h-[247px] w-screen font-roboto bg-[#0A0A0A]  px-12 py-2">
       {/* NewsLetter */}
-      <div className="flex  flex-col items-start justify-between ">
-        <h1 className=" text-white font-bold  text-2xl">Newsletter</h1>
+      <div className="flex flex-col items-start gap-3 ">
+        <h1 className=" text-white text-2xl font-bold  ">Newsletter</h1>
         <p className="text-[#FCFCFC]  text-sm font-normal ">
           Stay updated with our latest trends Seed heaven<br></br> so said place
           winged over given forth fruit.
         </p>
-        <div className="flex gap-2 items-center ">
-          <div className="">
-            <input
-              type="text"
-              placeholder="Enter your email"
-              className="text-sm font-normal outline-none text-white border border-[#4FACFE]  bg-transparent w-[370px] h-[40px] items-center p-2"
+        <form className="flex items-center gap-2  ">
+          <input
+            type="email"
+            label="Email"
+            required
+            placeholder="Enter your email"
+            className=" w-[370px] h-[40px] items-center p-2 text-sm font-normal text-white outline-none  border border-[#4FACFE]  bg-transparent"
+          />
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={2}
+            stroke="currentColor"
+            type="submit"
+            className="items-center text-center w-[36px] h-[36px] text-white bg-gradient-to-r from-[#4FACFE] to-[#00F2FE] rounded-[4px] cursor-pointer  "
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M8.25 4.5l7.5 7.5-7.5 7.5"
             />
-          </div>
-          <div className="text-white bg-gradient-to-r from-[#4FACFE] to-[#00F2FE] rounded-[4px] cursor-pointer w-[36px] h-[36px] items-center text-center ">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={2}
-              stroke="currentColor"
-              className="w-[36px] h-[36px]"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M8.25 4.5l7.5 7.5-7.5 7.5"
-              />
-            </svg>
-          </div>
-        </div>
+          </svg>
+        </form>
       </div>
       {/* About us */}
-      <div className="flex flex-col items-start justify-start gap-3 ">
+      <div className="flex flex-col items-start gap-3 ">
         <h1 className=" text-white font-bold  text-2xl">About us</h1>
         <p className="text-[#FCFCFC]  text-sm font-normal ">
           The are likely to focus on the text,<br></br>disregarding the layout
@@ -47,7 +47,7 @@ const Footer = () => {
         </p>
       </div>
       {/* Contact us */}
-      <div className="flex  flex-col items-start justify-between">
+      <div className="flex flex-col items-start gap-3">
         <h1 className=" text-white font-bold  text-2xl">Contact us</h1>
         <p className="text-[#FCFCFC]  text-base font-normal ">
           <span className="text-[#337AB7]">Phone:</span> +569 987 142

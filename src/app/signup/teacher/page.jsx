@@ -65,8 +65,8 @@ const Register = () => {
             </div>
             {/* Social Icon End */}
             <div className="flex items-center justify-between gap-2 my-8  ">
-              <Link href="/signup/teacher">
-                <ButtonWhite
+              <Link href="/signin/teacher">
+                <ButtonBlue
                   text="As a Teacher"
                   color="white"
                   borderRadius="1000px"
@@ -76,7 +76,7 @@ const Register = () => {
               </Link>
               <p>or</p>
               <Link href="/signup/student">
-                <ButtonBlue
+                <ButtonWhite
                   text="As a Student"
                   borderRadius="1000px"
                   color="white"
@@ -190,7 +190,7 @@ const Register = () => {
             {/* End of Form */}
             <p>
               Already have an account? {""}
-              <Link href="/signin/student" className="text-[#0093EF]">
+              <Link href="/signin/teacher" className="text-[#0093EF]">
                 Login
               </Link>
             </p>

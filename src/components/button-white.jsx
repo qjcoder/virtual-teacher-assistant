@@ -1,6 +1,3 @@
-import React from "react";
-
-import Link from "next/link";
 const ButtonWhite = (props) => {
   return (
     <button
@@ -9,6 +6,8 @@ const ButtonWhite = (props) => {
         backgroundColor: props.color,
         borderRadius: props.borderRadius,
         borderColor: props.borderColor,
+        width: props.width,
+        height: props.height,
       }}
     >
       {props.text}
