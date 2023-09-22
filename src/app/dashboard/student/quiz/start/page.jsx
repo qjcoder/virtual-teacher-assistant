@@ -1,9 +1,10 @@
-import { ButtonBlue, ButtonWhite } from "@/components";
+import { ButtonBlue, ButtonWhite, QuizCompletionCart } from "@/components";
 
 const QuizStart = () => {
   return (
     <div>
       <main className="min-h-screen bg-[#F9F9F9] w-[1300px] ">
+        <QuizCompletionCart />
         <div className="rounded-2xl pl-5">
           <h1 className="text-[#202020] font-bold text-[34px]">Quiz</h1>
           <p className="text-[18px] font-normal text-[#A5A5A5]">

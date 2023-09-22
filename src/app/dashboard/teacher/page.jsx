@@ -1,4 +1,4 @@
-import NewClassCard from "@/components/NewClassCard";
+import NewClassCard from "@/components/new-class-card";
 import CourseCard from "@/components/course-card";
 
 const Facultyportal = () => {
