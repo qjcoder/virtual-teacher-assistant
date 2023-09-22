@@ -1,5 +1,4 @@
-import { ButtonBlue, CourseCard } from "@/components";
-import React from "react";
+import { ButtonBlue, CourseCard, Successcart } from "@/components";
 
 const CreateCourse = () => {
   return (
@@ -9,6 +8,7 @@ const CreateCourse = () => {
         <p className="text-[18px] font-normal text-[#A5A5A5]">
           Lorem ipsum dolor sit amet
         </p>
+        <Successcart />
 
         <div className=" pt-6 flex   ">
           <div className=" flex flex-col  pl-10 pr-28 pb-4  bg-white  rounded-3xl   ">

@@ -2,7 +2,7 @@ import { ButtonBlue } from ".";
 
 const Successcart = () => {
   return (
-    <div className="">
+    <div className="@apply fixed w-screen h-screen -translate-x-36 -translate-y-6 left-2/4 top-2/4 bottom-2/4 right-2/4">
       <div className="w-[312px] h-[261px]  justify-center flex items-center border rounded-3xl border-[#FFFFFF]  bg-white shadow-2xl object-center z-50">
         <div className="w-[239px] h-[210px] -700 items-center flex justify-center flex-col gap-4">
           <div>
