@@ -1,4 +1,5 @@
 import { ButtonBlue, ButtonWhite } from "@/components";
+import Link from "next/link";
 
 const StudentQuiz = () => {
   return (
@@ -10,13 +11,13 @@ const StudentQuiz = () => {
           Lorem ipsum dolor sit amet
         </p>
 
-        <div className=" pt-10 flex">
+        <div className=" pt-10 ">
           {/* White Background Container  Start*/}
           <div className=" flex flex-col pb-4 bg-white  rounded-3xl w-[1110px] ">
-            <div className="items-center flex flex-col justify-between">
-              <div class="h-[40px] w-[1110px] bg-[#E9EAEF] flex justify-between px-3 items-center   ">
-                <h1 class="text-[#0D1F36] text-[13px] font-bold h-4 ">S.No</h1>
-                <h1 class=" text-[#0D1F36] text-[13px] font-bold h-4">
+            <div className="flex flex-col ">
+              {/* Quiz List Heading Start  */}
+              <div class="h-[40px] w-[1110px] flex justify-between bg-[#E9EAEF] items-center px-6  ">
+                <h1 class=" text-[#0D1F36] text-[13px] font-bold h-4 ml-28 ">
                   Test Title
                 </h1>
                 <h1 class=" text-[#0D1F36] text-[13px] font-bold h-4">
@@ -32,10 +33,13 @@ const StudentQuiz = () => {
                   Action
                 </h1>
               </div>
-              <div class="h-[64px] w-[1110px] bg-white flex justify-start px-3 items-center  ">
+              {/* Quiz List Heading End  */}
+
+              {/* Quiz List Start  */}
+              <div class="h-[64px] w-[1110px] bg-white flex justify-between  items-center px-6  ">
                 <h1 class="text-[#707683] text-[10px] font-normal  ">1</h1>
                 <h1 class="text-[#323C47] text-[13px] font-medium ">Quiz 1</h1>
-                <h1 class="text-[#707683] text-[10px] font-normal ">
+                <h1 class="text-[#707683] text-[10px] font-normal ml-16">
                   Software Engineering
                 </h1>
                 <h1 class="text-[#707683] text-[13px] font-normal ">
@@ -45,14 +49,39 @@ const StudentQuiz = () => {
                   Apr 28, 2023 2:30 PM
                 </h1>
                 <h1>
-                  <a
-                    href="#"
+                  <Link
+                    href="/dashboard/student/quiz/start"
                     class="font-normal text-[13px] text-[#14CD32] hover:underline "
                   >
                     Start Test
-                  </a>
+                  </Link>
                 </h1>
               </div>
+              {/* Quiz List End  */}
+
+              {/* Quiz List Completed Start  */}
+              <div class="h-[64px] w-[1110px] bg-white flex justify-between  items-center px-6  ">
+                <h1 class="text-[#707683] text-[10px] font-normal  ">2</h1>
+                <h1 class="text-[#323C47] text-[13px] font-medium ">Quiz 1</h1>
+                <h1 class="text-[#707683] text-[10px] font-normal ml-16">
+                  Software Engineering
+                </h1>
+                <h1 class="text-[#707683] text-[13px] font-normal ">
+                  Apr 28, 2023 2:30 PM
+                </h1>
+                <h1 class="text-[#707683] text-[13px] font-normal ">
+                  Apr 28, 2023 2:30 PM
+                </h1>
+                <h1>
+                  <Link
+                    href="/dashboard/student/quiz/start"
+                    class="font-normal text-[13px] text-[#004FF9] hover:underline "
+                  >
+                    View Result
+                  </Link>
+                </h1>
+              </div>
+              {/* Quiz List Completed end */}
             </div>
           </div>
         </div>
@@ -63,3 +92,5 @@ const StudentQuiz = () => {
 };
 
 export default StudentQuiz;
+
+
