@@ -1,4 +1,5 @@
 import { ButtonBlue, ButtonWhite } from "@/components";
+import Link from "next/link";
 
 const MCQ = () => {
   return (
@@ -25,6 +26,7 @@ const MCQ = () => {
                 width="128px"
                 borderColor="#26B893"
               />
+
               <ButtonBlue
                 text="Questions"
                 className="text-[16px] font-bold  text-center items-center justify-center  "

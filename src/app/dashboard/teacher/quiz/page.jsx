@@ -1,5 +1,6 @@
 import { ButtonBlue, ButtonWhite } from "@/components";
 import Successcart from "@/components/success-cart";
+import Link from "next/link";
 const Quiz = () => {
   return (
     <main className="min-h-screen bg-[#F9F9F9] w-[1300px] ">
@@ -22,13 +23,15 @@ const Quiz = () => {
                 height="42px"
                 width="128px"
               />
-              <ButtonWhite
-                text="Question"
-                className="text-[16px] font-bold  text-center items-center justify-center  "
-                borderRadius="6px"
-                height="42px"
-                width="128px"
-              />
+              <Link href="/dashboard/teacher/quiz/question">
+                <ButtonWhite
+                  text="Question"
+                  className="text-[16px] font-bold  text-center items-center justify-center  "
+                  borderRadius="6px"
+                  height="42px"
+                  width="128px"
+                />
+              </Link>
             </div>
             <div className="   flex mt-5 item flex-col mb-6  ">
               <form className="flex gap-8">
