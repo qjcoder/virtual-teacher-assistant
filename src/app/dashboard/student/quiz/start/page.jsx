@@ -4,7 +4,6 @@ const QuizStart = () => {
   return (
     <div>
       <main className="min-h-screen bg-[#F9F9F9] w-[1300px] ">
-        {/* <QuizCompletionCart /> */}
         <div className="rounded-2xl pl-5">
           <h1 className="text-[#202020] font-bold text-[34px]">Quiz</h1>
           <p className="text-[18px] font-normal text-[#A5A5A5]">
@@ -61,6 +60,7 @@ const QuizStart = () => {
                 </div>
               </div>
               <div className="flex pl-10 pb-10 gap-6 justify-end pr-52">
+                {/* <QuizCompletionCart /> */}
                 <ButtonBlue
                   text="Next"
                   className="text-base font-bold  text-center items-center justify-center"
