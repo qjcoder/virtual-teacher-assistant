@@ -4,8 +4,8 @@ import Link from "next/link";
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="w-screen h-screen">
-        <header className="p-3 w-full flex justify-between items-center px-10 mb-1">
+      <body className="h-screen">
+        <header className="flex justify-between items-center p-3 px-10">
           <div className="text-center text-xl font-bold">
             <span className=" text-[#171063]">Virtual</span>
             <br></br>
@@ -27,15 +27,15 @@ export default function RootLayout({ children }) {
             <Image src="/arrow.png " width={15} height={8} />
           </div>
         </header>
-        <aside className=" w-screen h-screen flex ">
-          <div className="  flex-col flex gap-6 ">
+        <aside className=" h-screen flex ">
+          <div className="w-[250px]  flex-col flex gap-6 mr-6">
             <div className="text-[#C7C7C7] uppercase font-bold text-base pl-12">
               Main Menu
             </div>
-            <div className="flex  flex-col outline-none  ">
+            <div className="flex  flex-col ">
               <Link
                 href="/dashboard/student/people"
-                className="flex gap-5  group  w-[345px] h-[50px] items-center pl-6 bg-white  ring-slate-900/5   hover:bg-sky-500 hover:ring-sky-500"
+                className="w-[250px] h-[50px] flex items-center gap-5  group pl-6 bg-white ring-slate-900/5   hover:bg-sky-500 hover:ring-sky-500"
               >
                 <svg
                   width="20"
@@ -56,7 +56,7 @@ export default function RootLayout({ children }) {
               </Link>
               <Link
                 href="/dashboard/student/grades"
-                className="flex gap-5  group  w-[345px] h-[50px] items-center pl-6 bg-white  ring-slate-900/5   hover:bg-sky-500 hover:ring-sky-500"
+                className="w-[250px] h-[50px] flex items-center gap-5  group pl-6 bg-white ring-slate-900/5   hover:bg-sky-500 hover:ring-sky-500"
               >
                 <svg
                   width="18"
@@ -77,7 +77,7 @@ export default function RootLayout({ children }) {
               </Link>
               <Link
                 href="/dashboard/student/assignment"
-                className="flex gap-5  group  w-[345px] h-[50px] items-center pl-6 bg-white  ring-slate-900/5   hover:bg-sky-500 hover:ring-sky-500"
+                className="w-[250px] h-[50px] flex items-center gap-5  group pl-6 bg-white ring-slate-900/5   hover:bg-sky-500 hover:ring-sky-500"
               >
                 <svg
                   width="20"
@@ -106,7 +106,7 @@ export default function RootLayout({ children }) {
               </Link>
               <Link
                 href="/dashboard/student/quiz"
-                className="flex gap-5  group  w-[345px] h-[50px] items-center pl-6 bg-white  ring-slate-900/5   hover:bg-sky-500 hover:ring-sky-500"
+                className="w-[250px] h-[50px] flex items-center gap-5  group pl-6 bg-white ring-slate-900/5   hover:bg-sky-500 hover:ring-sky-500"
               >
                 <svg
                   width="20"
@@ -144,7 +144,7 @@ export default function RootLayout({ children }) {
 
               <Link
                 href="/"
-                className="flex gap-5  group  w-[345px] h-[50px] items-center pl-6 bg-white  ring-slate-900/5   hover:bg-sky-500 hover:ring-sky-500"
+                className="w-[250px] h-[50px] flex items-center gap-5  group pl-6 bg-white ring-slate-900/5   hover:bg-sky-500 hover:ring-sky-500"
               >
                 <svg
                   width="16"

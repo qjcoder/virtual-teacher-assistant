@@ -3,18 +3,18 @@ import { ButtonBlue, ButtonWhite, QuizCompletionCart } from "@/components";
 const QuizStart = () => {
   return (
     <div>
-      <main className="min-h-screen bg-[#F9F9F9] w-[1300px] ">
+      <main className="min-h-screen bg-[#F9F9F9] w-screen ">
         <div className="rounded-2xl pl-5">
           <h1 className="text-[#202020] font-bold text-[34px]">Quiz</h1>
           <p className="text-[18px] font-normal text-[#A5A5A5]">
             Lorem ipsum dolor sit amet
           </p>
 
-          <div className=" pt-6 flex">
-            <div className="flex flex-col pl-16 pt-10 bg-white rounded-xl gap-20 shadow-xl p-4 w-[1102px] h-[794px]">
+          <div className=" flex">
+            <div className="min-h-screen flex flex-col pl-20 pr-40 pt-10 gap-5 bg-white rounded-xl  shadow-xl p-4 ">
               <div className="flex justify-center">
                 <div className="flex gap-3 ">
-                  <div className=" flex flex-col  px-5   w-[293px] h-[93px] bg-white rounded-2xl shadow-md  ">
+                  <div className=" flex flex-col  px-5  w-[293px] h-[93px] bg-white rounded-2xl shadow-md  ">
                     <h1 className="text-sm font-medium mb-3">Quiz Time</h1>
                     <div className="flex gap-4 items-center">
                       <div className="flex items-center justify-between p-3 w-[114px] h-[40px]  bg-white rounded-lg drop-shadow-2xl shadow-md font-medium text-base text-[#363942]">
@@ -26,8 +26,8 @@ const QuizStart = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col gap-12">
-                <div className="flex justify-between pr-52 text-[25px] font-extrabold  ">
+              <div className="flex flex-col gap-10  ">
+                <div className="flex justify-between text-[25px] font-extrabold gap-32 ">
                   <h1>(1) Artificial Intelligence is about_____.</h1>
                   <h1>Count: 1/10</h1>
                 </div>
@@ -59,8 +59,7 @@ const QuizStart = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex pl-10 pb-10 gap-6 justify-end pr-52">
-                <QuizCompletionCart />
+              <div className="flex pl-10  justify-end mb-3">
                 <ButtonBlue
                   text="Next"
                   className="text-base font-bold  text-center items-center justify-center"

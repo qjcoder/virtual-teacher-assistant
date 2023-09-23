@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const StudentQuiz = () => {
   return (
-    <main className="min-h-screen bg-[#F9F9F9] w-[1300px] ">
+    <main className="min-h-screen bg-[#F9F9F9] w-screen ">
       {/* Top Title Container Start*/}
       <div className="rounded-2xl pl-5">
         <h1 className="text-[#202020] font-bold text-[34px]">Courses</h1>
@@ -74,7 +74,7 @@ const StudentQuiz = () => {
                 </h1>
                 <h1>
                   <Link
-                    href="/dashboard/student/quiz/start"
+                    href="/dashboard/student/quiz/result"
                     class="font-normal text-[13px] text-[#004FF9] hover:underline "
                   >
                     View Result

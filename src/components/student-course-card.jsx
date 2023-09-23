@@ -28,6 +28,8 @@ const StudentCourseCard = () => {
             text="Details"
             className="text-[12px] text-center font-medium items-center justify-center  "
             borderRadius="6px"
+            fontSize="12px"
+            fontWeight="500"
             height="34px"
             width="79px"
           />

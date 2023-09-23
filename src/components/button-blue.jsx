@@ -9,6 +9,8 @@ const ButtonBlue = (props) => {
         borderRadius: props.borderRadius,
         width: props.width,
         height: props.height,
+        fontSize: props.fontSize,
+        fontWeight: props.fontWeight,
       }}
     >
       {props.text}
