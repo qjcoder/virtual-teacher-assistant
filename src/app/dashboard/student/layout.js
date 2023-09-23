@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
           </div>
           <div className="flex gap-6 items-center  ">
             <Image
-              src="/profile.jpg" //Size of the discuss later
+              src="/profile-avatar.jpg" //Size of the discuss later
               width={57}
               height={57}
               className="w-[57px] h-[57px] border-solid border-1 border-indigo-600 rounded-xl object-cover drop-shadow-md outline-none "

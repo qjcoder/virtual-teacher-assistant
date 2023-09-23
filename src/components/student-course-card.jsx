@@ -4,7 +4,7 @@ import { ButtonBlue } from "../components/index";
 
 const StudentCourseCard = () => {
   return (
-    <div className=" w-[296px] min-h-max rounded-md overflow-hidden shadow-lg justify-between flex flex-col py-4">
+    <div className="w-[296px] flex flex-col items-center ml-6 mr-3 my-6 pb-6 rounded-2xl shadow-lg  ">
       {/* Card Start  */}
       <Image
         className="w-full h-40 rounded-t-2xl"

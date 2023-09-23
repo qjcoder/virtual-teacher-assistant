@@ -4,16 +4,16 @@ import { ButtonBlue } from "../components/index";
 
 const CourseCard = () => {
   return (
-    <div className=" w-[296px]  rounded-md overflow-hidden shadow-lg  items-center justify-between flex flex-col py-4">
+    <div className=" w-[296px] flex flex-col items-center ml-6 mr-3 my-6 pb-6 rounded-2xl shadow-lg   ">
       <Image
-        className="w-full h-40 rounded-t-2xl"
+        className="w-full h-40 rounded-t-2xl "
         src="/image.png"
         alt="Course 1"
         height={200}
         width={200}
       />
-      <div className="px-4 items-center">
-        <div className=" flex rounded-full  bg-white  -translate-y-4 translate-x-5  h-10 w-[225px] items-center  ">
+      <div className=" items-center px-4 ">
+        <div className="h-10 w-[225px] flex items-center rounded-full  bg-white  -translate-y-4 translate-x-5   ">
           <div className="flex  justify-between">
             <div className="z-40">
               <Image src="/Ander.png" width={30} height={30} />
@@ -39,21 +39,23 @@ const CourseCard = () => {
             <sup className="text-[#263238] text-sm font-medium">students</sup>
           </div>
         </div>
-        <div className=" flex  flex-col justify-between gap-2">
+        <div className=" flex  flex-col justify-between gap-3">
           <p className="text-[10px] font-normal text-[#777795] ">
             1 - 28 July 2022
           </p>
-          <div className="font-bold text-xl mb-2">
+          <div className="text-[15px] text-[#0B7077] font-extrabold mb-2">
             Product Management Basic - Course
           </div>
-          <p className="text-gray-700 text-base">
+          <p className="text-[10px] font-normal  text-gray-700 text-base">
             Product Management Masterclass, you will learn with Sarah Johnson -
             Head of Product Customer Platform Gojek Indonesia.
           </p>
           <ButtonBlue
             text="Details"
-            className="text-[10px] text-center items-center justify-center "
+            className="text-[12px] text-center font-medium items-center justify-center  "
             borderRadius="6px"
+            fontSize="12px"
+            fontWeight="500"
             height="34px"
             width="79px"
           />
