@@ -2,7 +2,7 @@ import { ButtonBlue, CourseCard, Successcart } from "@/components";
 
 const CreateCourse = () => {
   return (
-    <main className="min-h-screen bg-[#F9F9F9] w-[1300px] ">
+    <main className="min-h-screen bg-[#F9F9F9]  ">
       <div className="rounded-2xl pl-5">
         <h1 className="text-[#202020] font-bold text-[34px]">Create Course</h1>
         <p className="text-[18px] font-normal text-[#A5A5A5]">

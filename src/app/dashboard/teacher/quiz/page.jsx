@@ -3,19 +3,20 @@ import Successcart from "@/components/success-cart";
 import Link from "next/link";
 const Quiz = () => {
   return (
-    <main className="min-h-screen bg-[#F9F9F9] w-[1300px] ">
+    <main className="h-screen bg-[#F9F9F9] ">
       <div className="rounded-2xl pl-5">
         <h1 className="text-[#202020] font-bold text-[34px]">Generate Quiz</h1>
         <p className="text-[18px] font-normal text-[#A5A5A5]">
           Lorem ipsum dolor sit amet
         </p>
 
-        <div className=" pt-6 flex">
+        <div className="flex">
+          {/* White Background Container  Start*/}
           <div className=" flex flex-col  pl-10 pr-28 pb-4  bg-white  rounded-3xl   ">
-            <div className="  flex justify-center pt-5 ">
+            <div className="flex justify-center pt-5 pb-10 ">
               <h1 className="text-2xl font-bold text-[#CACED8]">Quiz</h1>
             </div>
-            <div className="flex gap-4 items-center mb-4 ">
+            <div className="flex gap-4 items-center mb-10 ">
               <ButtonBlue
                 text="Details"
                 className="text-[16px] font-bold  text-center items-center justify-center  "
@@ -110,7 +111,8 @@ const Quiz = () => {
                       required
                       class="w-[295px] h-[40px] rounded-lg border-[2px] solid border-[#CACED8] outline-none pl-4"
                     >
-                      <option selected>Everyone</option>
+                      <option selected></option>
+                      <option>Everyone</option>
                       <option>SDA</option>
                     </select>
                   </div>

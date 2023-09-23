@@ -1,4 +1,5 @@
 import { ButtonBlue, ButtonWhite } from "@/components";
+import Link from "next/link";
 
 const Question = () => {
   return (
@@ -10,21 +11,23 @@ const Question = () => {
           Lorem ipsum dolor sit amet
         </p>
 
-        <div className=" pt-10 flex">
+        <div className="flex">
           {/* White Background Container  Start*/}
           <div className=" flex flex-col  px-10  py-4  bg-white  rounded-3xl   ">
             <div className="  flex justify-center pt-5 pb-10">
               <h1 className="text-2xl font-bold text-[#CACED8]">Quiz</h1>
             </div>
             <div className="flex gap-4 items-center mb-10  ">
-              <ButtonWhite
-                text="Details"
-                className="text-[16px] font-bold  text-center items-center justify-center border-green-500 "
-                borderRadius="6px"
-                height="42px"
-                width="128px"
-                borderColor="#26B893"
-              />
+              <Link href="/dashboard/teacher/quiz">
+                <ButtonWhite
+                  text="Details"
+                  className="text-[16px] font-bold  text-center items-center justify-center border-green-500 "
+                  borderRadius="6px"
+                  height="42px"
+                  width="128px"
+                  borderColor="#26B893"
+                />
+              </Link>
               <ButtonBlue
                 text="Questions"
                 className="text-[16px] font-bold  text-center items-center justify-center  "
@@ -56,7 +59,7 @@ const Question = () => {
             <h1 className=" text-base font-medium text-[#083A50] py-4 ">
               Question 1
             </h1>
-            <div className="flex justify-between  w-[1155px] h-[74px] border-[2px] solid border-[#CACED8] outline-none p-4 items-center shadow-lg ">
+            <div className="flex justify-between w-[60vw] h-[74px] border-[2px] solid border-[#CACED8] outline-none p-4 items-center shadow-lg ">
               <div>
                 Based on which of the following parameter Artificial
                 Intelligence is categorized?
