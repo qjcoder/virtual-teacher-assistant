@@ -9,7 +9,7 @@ export default function Home() {
       <header className=" flex justify-between items-center  p-5 ">
         <Header />
         <div className="flex gap-4">
-          <Link href="/signin">
+          <Link href="/signin/teacher">
             <ButtonWhite text="Sign in" color="white" borderRadius="20px" />
           </Link>
           <Link href="/dashboard">
@@ -38,7 +38,7 @@ export default function Home() {
                 width="120px"
               />
             </Link>
-            <Link href="/signin">
+            <Link href="/signin/teacher">
               <ButtonWhite text="Sign in" color="white" borderRadius="20px" />
             </Link>
           </div>

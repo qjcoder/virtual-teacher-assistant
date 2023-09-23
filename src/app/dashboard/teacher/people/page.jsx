@@ -25,50 +25,67 @@ const People = () => {
                 Create Course
               </h1>
             </div>
-            <div className="   flex mt-5 item flex-col  ">
+            <div className="   flex flex-col mt-5">
               <div className="flex gap-8">
-                <form className="flex flex-col">
-                  <label className="mb-2 text-base font-medium text-[#083A50]">
-                    Name
-                  </label>
-                  <input
-                    type="text"
-                    className="mb-5 w-[451px] h-[44px] rounded-xl border-[2px] solid border-[#CACED8] outline-none pl-4 "
-                  />
-                  <label className="mb-2 text-base font-medium text-[#083A50]">
-                    Email
-                  </label>
-                  <input
-                    type="text"
-                    className="mb-5 w-[451px] h-[44px] rounded-xl border-[2px] solid border-[#CACED8] outline-none pl-4 "
-                  />
+                {/* COURSE CREATION FORM START  */}
+                <form className="flex flex-col gap-2">
+                  <div className="flex gap-8">
+                    <div className="flex flex-col">
+                      <label className="mb-2 text-base font-medium text-[#083A50]">
+                        Name
+                      </label>
+                      <input
+                        label="Student Name"
+                        type="text"
+                        required
+                        className="w-[451px] h-[44px] rounded-xl border-[2px] solid border-[#CACED8] outline-none mb-5 pl-4 "
+                      />
+                    </div>
+                    <div className="flex flex-col">
+                      <label className="mb-2 text-base font-medium text-[#083A50]">
+                        Reg No
+                      </label>
+                      <input
+                        type="text"
+                        required
+                        label="Student Reg No"
+                        className="mb-5 w-[451px] h-[44px] rounded-xl border-[2px] solid border-[#CACED8] outline-none pl-4 "
+                      />
+                    </div>
+                  </div>
+                  <div className="flex gap-4">
+                    <div className="flex flex-col">
+                      <label className="mb-2 text-base font-medium text-[#083A50] ">
+                        Email
+                      </label>
+                      <input
+                        type="email"
+                        required
+                        label="Student Email Address"
+                        className="mb-5 w-[451px] h-[44px] rounded-xl border-[2px] solid border-[#CACED8] outline-none pl-4 "
+                      />
+                    </div>
+                  </div>
+                  <div className="flex gap-4 items-center mb-4 ">
+                    <ButtonWhite
+                      text="Cancel"
+                      className="text-[16px] font-bold  text-center items-center justify-center  "
+                      borderRadius="6px"
+                      height="42px"
+                      width="128px"
+                    />
+                    <ButtonBlue
+                      text="Save"
+                      className="text-[16px] font-bold  text-center items-center justify-center  "
+                      borderRadius="6px"
+                      height="42px"
+                      width="128px"
+                    />
+                  </div>
                 </form>
-                <form className="flex flex-col">
-                  <label className="mb-2 text-base font-medium text-[#083A50] ">
-                    Reg No
-                  </label>
-                  <input
-                    type="text"
-                    className="mb-5 w-[451px] h-[44px] rounded-xl border-[2px] solid border-[#CACED8] outline-none pl-4 "
-                  />
-                </form>
+                {/* COURSE CREATION FORM START  */}
               </div>
-              <div className="flex gap-4 items-center mb-4 ">
-                <ButtonWhite
-                  text="Cancel"
-                  className="text-[16px] font-bold  text-center items-center justify-center  "
-                  borderRadius="6px"
-                  height="42px"
-                  width="128px"
-                />
-                <ButtonBlue
-                  text="Save"
-                  className="text-[16px] font-bold  text-center items-center justify-center  "
-                  borderRadius="6px"
-                  height="42px"
-                  width="128px"
-                />
-              </div>
+
               {/* Head */}
               <div className="flex flex-col max-w-min max-h-min  border-[1px] border-[#CACED8]   rounded-md shadow-lg">
                 <div className="flex  justify-between h-[50px] solid border-[1px] border-[#CACED8]  pl-5 ">

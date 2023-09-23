@@ -132,7 +132,7 @@ const TeacherLogin = () => {
                 </div>
               </form>
               <div className="mb-6">
-                <Link href="/dashboard/teacher">
+                <Link href="/dashboard/student">
                   <ButtonBlue
                     text="Sign in"
                     borderRadius="20px"

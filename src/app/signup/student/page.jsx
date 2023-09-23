@@ -8,7 +8,7 @@ const Register = () => {
       <Header />
       <section className="flex ">
         {/* left */}
-        <div className=" flex flex-1  flex-col  p-6  items-center gap-11  ">
+        <div className="flex flex-1  flex-col  p-2  items-center gap-11  ">
           <div className="text-[36px] font-bold text-center">
             Getting <span className="text-[#0093EF]">Quality</span> <br></br>
             Education Is Now More <span className="text-[#0093EF]">Easy</span>
@@ -19,14 +19,14 @@ const Register = () => {
         </div>
         {/* Right  */}
 
-        <div className="flex flex-1 items-center justify-center mb-12 mr-6 p-6   bg-[#ABA9C2]  rounded-3xl ">
+        <div className=" flex flex-1 items-center justify-center  p-2   bg-[#ABA9C2]  rounded-3xl ">
           <div className="flex items-center flex-col">
             <Image
               className=" rounded-full border-4 border-white "
               src="/profile-avatar.jpg"
               alt="Profile Picture"
-              width={117}
-              height={116}
+              width={90}
+              height={90}
             />
 
             <p className="text-base font-roboto font-normal mt-3">
@@ -34,7 +34,7 @@ const Register = () => {
             </p>
 
             {/* Social Icon Start */}
-            <div className="flex gap-6 mt-6">
+            <div className="flex gap-6 mt-3">
               {/* <!-- Github --> */}
               <Link href={"#"}>
                 <Image
@@ -64,8 +64,8 @@ const Register = () => {
               />
             </div>
             {/* Social Icon End */}
-            <div className="flex items-center justify-between gap-2 my-8  ">
-              <Link href="/signup/teacher">
+            <div className="flex items-center justify-between gap-2 my-4  ">
+              <Link href="/signin/teacher">
                 <ButtonWhite
                   text="As a Teacher"
                   color="white"

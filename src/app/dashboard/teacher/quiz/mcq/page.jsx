@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const MCQ = () => {
   return (
-    <main className="min-h-screen bg-[#F9F9F9] w-[1300px] ">
+    <main className="min-h-screen bg-[#F9F9F9]  ">
       {/* Top Title Container Start*/}
       <div className="rounded-2xl pl-5">
         <h1 className="text-[#202020] font-bold text-[34px]">Generate Quiz</h1>
@@ -78,12 +78,12 @@ const MCQ = () => {
             <h1 className=" text-[22px] font-medium text-[#000] py-4 ">
               Question
             </h1>
-            <div className="ml-20 flex justify-between  w-[1155px] h-[74px] border-[2px] solid border-[#CACED8] outline-none p-4 items-center shadow-lg ">
+            <from className="ml-20 flex justify-between h-[74px] border-[2px] solid border-[#CACED8] outline-none p-4 items-center shadow-lg ">
               <div className="text-[25px] font-medium ">
                 Based on which of the following parameter Artificial
                 Intelligence is categorized?
               </div>
-            </div>
+            </from>
             {/* Question with Question #  End*/}
             {/* Answer #  Start*/}
             <div>

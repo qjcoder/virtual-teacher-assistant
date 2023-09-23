@@ -132,6 +132,7 @@ const TeacherLogin = () => {
                 <Link href="/dashboard/teacher">
                   <ButtonBlue
                     text="Sign in"
+                    type="submit"
                     borderRadius="20px"
                     height="40px"
                     width="120px"

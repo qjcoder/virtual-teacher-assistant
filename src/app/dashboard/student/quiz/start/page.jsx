@@ -60,7 +60,7 @@ const QuizStart = () => {
                 </div>
               </div>
               <div className="flex pl-10 pb-10 gap-6 justify-end pr-52">
-                {/* <QuizCompletionCart /> */}
+                <QuizCompletionCart />
                 <ButtonBlue
                   text="Next"
                   className="text-base font-bold  text-center items-center justify-center"
