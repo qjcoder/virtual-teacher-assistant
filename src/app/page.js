@@ -9,10 +9,10 @@ export default function Home() {
       <header className=" flex justify-between items-center  p-5 ">
         <Header />
         <div className="flex gap-4">
-          <Link href="/signin/teacher">
+          <Link href="/auth/teacher-signin">
             <ButtonWhite text="Sign in" color="white" borderRadius="20px" />
           </Link>
-          <Link href="/dashboard">
+          <Link href="/auth/teacher-signup">
             <ButtonBlue
               text="Get Started"
               borderRadius="20px"
@@ -30,7 +30,7 @@ export default function Home() {
             <span className="text-[#0093EF]"> Easy</span>
           </h1>
           <div className="flex items-center justify-center gap-2 mt-12   ">
-            <Link href="/dashboard">
+            <Link href="/auth/teacher-signup">
               <ButtonBlue
                 text="Get Started"
                 borderRadius="20px"
@@ -38,7 +38,7 @@ export default function Home() {
                 width="120px"
               />
             </Link>
-            <Link href="/signin/teacher">
+            <Link href="/auth/teacher-signin">
               <ButtonWhite text="Sign in" color="white" borderRadius="20px" />
             </Link>
           </div>

@@ -1,7 +1,17 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function RootLayout({ children }) {
+  const currentRoute = usePathname();
+  // styles for all links
+  const linkStyle =
+    "w-[250px] h-[50px] flex items-center gap-5 pl-6 selection:bg-orange-500 bg-white";
+  // styles for active and non-active links
+  const activeStyle =
+    linkStyle + " bg-gradient-to-r from-[#4540E1] to-[#00F2FE]";
+  const nonActiveStyle = linkStyle + " text-white";
   return (
     <html lang="en">
       <body className="h-screen">
@@ -34,8 +44,12 @@ export default function RootLayout({ children }) {
             </div>
             <div className="flex  flex-col ">
               <Link
-                href="/dashboard/student/people"
-                className="w-[250px] h-[50px] flex items-center gap-5  group pl-6 bg-white ring-slate-900/5   hover:bg-sky-500 hover:ring-sky-500"
+                href="/dashboard/student/course"
+                className={
+                  currentRoute === "/dashboard/student/course"
+                    ? activeStyle
+                    : nonActiveStyle
+                }
               >
                 <svg
                   width="20"
@@ -56,7 +70,11 @@ export default function RootLayout({ children }) {
               </Link>
               <Link
                 href="/dashboard/student/grades"
-                className="w-[250px] h-[50px] flex items-center gap-5  group pl-6 bg-white ring-slate-900/5   hover:bg-sky-500 hover:ring-sky-500"
+                className={
+                  currentRoute === "/dashboard/student/grades"
+                    ? activeStyle
+                    : nonActiveStyle
+                }
               >
                 <svg
                   width="18"
@@ -77,7 +95,11 @@ export default function RootLayout({ children }) {
               </Link>
               <Link
                 href="/dashboard/student/assignment"
-                className="w-[250px] h-[50px] flex items-center gap-5  group pl-6 bg-white ring-slate-900/5   hover:bg-sky-500 hover:ring-sky-500"
+                className={
+                  currentRoute === "/dashboard/student/assignment"
+                    ? activeStyle
+                    : nonActiveStyle
+                }
               >
                 <svg
                   width="20"
@@ -106,7 +128,11 @@ export default function RootLayout({ children }) {
               </Link>
               <Link
                 href="/dashboard/student/quiz"
-                className="w-[250px] h-[50px] flex items-center gap-5  group pl-6 bg-white ring-slate-900/5   hover:bg-sky-500 hover:ring-sky-500"
+                className={
+                  currentRoute === "/dashboard/student/quiz"
+                    ? activeStyle
+                    : nonActiveStyle
+                }
               >
                 <svg
                   width="20"
@@ -144,7 +170,7 @@ export default function RootLayout({ children }) {
 
               <Link
                 href="/"
-                className="w-[250px] h-[50px] flex items-center gap-5  group pl-6 bg-white ring-slate-900/5   hover:bg-sky-500 hover:ring-sky-500"
+                className={currentRoute === "/" ? activeStyle : nonActiveStyle}
               >
                 <svg
                   width="16"

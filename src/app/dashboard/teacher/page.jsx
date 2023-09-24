@@ -12,6 +12,8 @@ const Facultyportal = () => {
       </div>
       <div className="flex w-screen bg-white shadow-2xl rounded-2xl">
         <CourseCard />
+        <CourseCard />
+        <CourseCard />
         <NewClassCard />
       </div>
     </main>

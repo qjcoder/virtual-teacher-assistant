@@ -1,7 +1,17 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function RootLayout({ children }) {
+  const currentRoute = usePathname();
+  // styles for all links
+  const linkStyle =
+    "w-[250px] h-[50px] flex items-center gap-5 pl-6 selection:bg-orange-500 bg-white";
+  // styles for active and non-active links
+  const activeStyle =
+    linkStyle + " bg-gradient-to-r from-[#4540E1] to-[#00F2FE]";
+  const nonActiveStyle = linkStyle + " text-white";
   return (
     <html lang="en">
       <body className="h-screen">
@@ -35,7 +45,11 @@ export default function RootLayout({ children }) {
             <div className="flex  flex-col ">
               <Link
                 href="/dashboard/teacher"
-                className="w-[250px] h-[50px] flex items-center gap-5  group pl-6 bg-white ring-slate-900/5   hover:bg-sky-500 hover:ring-sky-500"
+                className={
+                  currentRoute === "/dashboard/teacher"
+                    ? activeStyle
+                    : nonActiveStyle
+                }
               >
                 <svg
                   width="18"
@@ -56,7 +70,11 @@ export default function RootLayout({ children }) {
               </Link>
               <Link
                 href="/dashboard/teacher/people"
-                className="w-[250px] h-[50px] flex items-center gap-5  group pl-6 bg-white ring-slate-900/5   hover:bg-sky-500 hover:ring-sky-500"
+                className={
+                  currentRoute === "/dashboard/teacher/people"
+                    ? activeStyle
+                    : nonActiveStyle
+                }
               >
                 <svg
                   width="22"
@@ -79,7 +97,11 @@ export default function RootLayout({ children }) {
               </Link>
               <Link
                 href="/dashboard/teacher/grades"
-                className="w-[250px] h-[50px] flex items-center gap-5  group pl-6 bg-white ring-slate-900/5   hover:bg-sky-500 hover:ring-sky-500"
+                className={
+                  currentRoute === "/dashboard/teacher/grades"
+                    ? activeStyle
+                    : nonActiveStyle
+                }
               >
                 <svg
                   width="18"
@@ -100,7 +122,11 @@ export default function RootLayout({ children }) {
               </Link>
               <Link
                 href="/dashboard/teacher/assignment"
-                className="w-[250px] h-[50px] flex items-center gap-5  group pl-6 bg-white ring-slate-900/5   hover:bg-sky-500 hover:ring-sky-500"
+                className={
+                  currentRoute === "/dashboard/teacher/assignment"
+                    ? activeStyle
+                    : nonActiveStyle
+                }
               >
                 <svg
                   width="20"
@@ -129,7 +155,11 @@ export default function RootLayout({ children }) {
               </Link>
               <Link
                 href="/dashboard/teacher/quiz"
-                className="w-[250px] h-[50px] flex items-center gap-5  group pl-6 bg-white ring-slate-900/5   hover:bg-sky-500 hover:ring-sky-500"
+                className={
+                  currentRoute === "/dashboard/teacher/quiz"
+                    ? activeStyle
+                    : nonActiveStyle
+                }
               >
                 <svg
                   width="20"
@@ -166,7 +196,11 @@ export default function RootLayout({ children }) {
               </Link>
               <Link
                 href="/dashboard/teacher/task"
-                className="w-[250px] h-[50px] flex items-center gap-5  group pl-6 bg-white ring-slate-900/5   hover:bg-sky-500 hover:ring-sky-500"
+                className={
+                  currentRoute === "/dashboard/teacher/task"
+                    ? activeStyle
+                    : nonActiveStyle
+                }
               >
                 <svg
                   width="20"
@@ -188,14 +222,13 @@ export default function RootLayout({ children }) {
                     </clipPath>
                   </defs>
                 </svg>
-
                 <h1 className="text-slate-900 group-hover:text-white text-base font-medium">
                   Task Planner
                 </h1>
               </Link>
               <Link
                 href="/"
-                className="w-[250px] h-[50px] flex items-center gap-5  group pl-6 bg-white ring-slate-900/5   hover:bg-sky-500 hover:ring-sky-500"
+                className={currentRoute === "/" ? activeStyle : nonActiveStyle}
               >
                 <svg
                   width="16"
