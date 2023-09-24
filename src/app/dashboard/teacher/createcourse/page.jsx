@@ -1,6 +1,31 @@
+"use client";
 import { ButtonBlue, CourseCard, Successcart } from "@/components";
+import axios from "axios";
+import { useState } from "react";
 
 const CreateCourse = () => {
+  //Axios Form Handling POSt START
+  const [coursedata, setCoursedata] = useState({
+    course_name: "",
+    teacher_name: "",
+    institute_name: "",
+    course_description: "",
+  });
+
+  const handleInput = (event) => {
+    setCoursedata({ ...coursedata, [event.target.name]: event.target.value });
+  };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const response = await axios.post(
+      "https://jsonplaceholder.typicode.com/posts",
+      coursedata
+    );
+    console.log(response);
+  };
+
+  //Axios Form Handling POSt END
   return (
     <main className="min-h-screen bg-[#F9F9F9]  ">
       <div className="rounded-2xl pl-5">
@@ -30,7 +55,7 @@ const CreateCourse = () => {
               </div>
 
               {/* COURSE CREATION FORM START  */}
-              <form className="flex flex-col gap-8">
+              <form onSubmit={handleSubmit} className="flex flex-col gap-8">
                 <div className="flex gap-8">
                   <div className="flex flex-col">
                     <label className="mb-2 text-base font-medium text-[#083A50]">
@@ -38,6 +63,8 @@ const CreateCourse = () => {
                     </label>
                     <input
                       label="Cousre Name"
+                      name="course_name"
+                      onChange={handleInput}
                       type="text"
                       required
                       className="w-[451px] h-[44px] rounded-xl border-[2px] solid border-[#CACED8] outline-none mb-5 pl-4 "
@@ -49,6 +76,8 @@ const CreateCourse = () => {
                     </label>
                     <input
                       type="text"
+                      name="teacher_name"
+                      onChange={handleInput}
                       required
                       label="Teacher Name"
                       className="mb-5 w-[451px] h-[44px] rounded-xl border-[2px] solid border-[#CACED8] outline-none pl-4 "
@@ -62,6 +91,8 @@ const CreateCourse = () => {
                     </label>
                     <input
                       type="text"
+                      name="institute_name"
+                      onChange={handleInput}
                       required
                       label="Institute Name"
                       className="mb-5 w-[451px] h-[44px] rounded-xl border-[2px] solid border-[#CACED8] outline-none pl-4 "
@@ -73,6 +104,8 @@ const CreateCourse = () => {
                     </label>
                     <textarea
                       type="text"
+                      name="course_description"
+                      onChange={handleInput}
                       required
                       label="Description"
                       className="mb-5 w-[451px] h-[145px] rounded-xl border-[2px] solid border-[#CACED8] outline-none px-4 py-2 "
@@ -81,6 +114,7 @@ const CreateCourse = () => {
                 </div>
                 <ButtonBlue
                   text="Save"
+                  type="submit"
                   className="text-[10px] text-center items-center justify-center  "
                   borderRadius="6px"
                   height="42px"

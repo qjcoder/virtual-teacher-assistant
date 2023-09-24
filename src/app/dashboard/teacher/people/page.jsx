@@ -1,11 +1,34 @@
+"use client";
 import { ButtonBlue, ButtonWhite } from "@/components";
 import CourseCard from "@/components/course-card";
+import axios from "axios";
+import { useState } from "react";
 
-const People = () => {
+const Student = () => {
+  //Axios Form Handling POSt START
+  const [addStudent, setaddStudent] = useState({
+    student_name: "",
+    reg_no: "",
+    student_email: "",
+  });
+  const handleInput = (event) => {
+    setaddStudent({ ...addStudent, [event.target.name]: event.target.value });
+  };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const response = await axios.post(
+      "https://jsonplaceholder.typicode.com/posts",
+      addStudent
+    );
+    console.log(response);
+  };
+
+  //Axios Form Handling POSt END
   return (
     <main className="min-h-screen bg-[#F9F9F9] w-[1300px] ">
       <div className="rounded-2xl pl-5">
-        <h1 className="text-[#202020] font-bold text-[34px]">People</h1>
+        <h1 className="text-[#202020] font-bold text-[34px]">Student</h1>
         <p className="text-[18px] font-normal text-[#A5A5A5]">
           Lorem ipsum dolor sit amet
         </p>
@@ -28,7 +51,7 @@ const People = () => {
             <div className="   flex flex-col mt-5">
               <div className="flex gap-8">
                 {/* COURSE CREATION FORM START  */}
-                <form className="flex flex-col gap-2">
+                <form onSubmit={handleSubmit} className="flex flex-col gap-2">
                   <div className="flex gap-8">
                     <div className="flex flex-col">
                       <label className="mb-2 text-base font-medium text-[#083A50]">
@@ -36,6 +59,8 @@ const People = () => {
                       </label>
                       <input
                         label="Student Name"
+                        name="student_name"
+                        onChange={handleInput}
                         type="text"
                         required
                         className="w-[451px] h-[44px] rounded-xl border-[2px] solid border-[#CACED8] outline-none mb-5 pl-4 "
@@ -47,6 +72,8 @@ const People = () => {
                       </label>
                       <input
                         type="text"
+                        name="reg_no"
+                        onChange={handleInput}
                         required
                         label="Student Reg No"
                         className="mb-5 w-[451px] h-[44px] rounded-xl border-[2px] solid border-[#CACED8] outline-none pl-4 "
@@ -60,6 +87,8 @@ const People = () => {
                       </label>
                       <input
                         type="email"
+                        name="student_email"
+                        onChange={handleInput}
                         required
                         label="Student Email Address"
                         className="mb-5 w-[451px] h-[44px] rounded-xl border-[2px] solid border-[#CACED8] outline-none pl-4 "
@@ -416,4 +445,4 @@ const People = () => {
   );
 };
 
-export default People;
+export default Student;
