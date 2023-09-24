@@ -1,8 +1,34 @@
-import { ButtonBlue, ButtonWhite, Header } from "@/components";
+"use client";
+
+import axios from "axios";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
+import { ButtonBlue, ButtonWhite, Header } from "@/components";
 
-const TeacherLogin = () => {
+const StudentLogin = () => {
+  //Axios Form Handling POSt START
+  const [post, setPost] = useState({
+    username: "",
+    password: "",
+    role: "student",
+  });
+
+  const handleInput = (event) => {
+    setPost({ ...post, [event.target.name]: event.target.value });
+  };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const response = await axios.post(
+      "https://jsonplaceholder.typicode.com/posts",
+      post
+    );
+    console.log(response);
+  };
+
+  //Axios Form Handling POSt END
+
   return (
     <div className="h-screen flex flex-col p-5 bg-white ">
       <Header />
@@ -86,8 +112,11 @@ const TeacherLogin = () => {
               </Link>
             </div>
             {/* Form */}
-            <div className=" flex flex-col items-center gap-8">
-              <form className="flex flex-col gap-4">
+            <form
+              onSubmit={handleSubmit}
+              className=" flex flex-col items-center gap-8"
+            >
+              <div className="flex flex-col gap-4">
                 <div className="flex gap-5  ">
                   <svg
                     width="24"
@@ -107,6 +136,8 @@ const TeacherLogin = () => {
                   </svg>
 
                   <input
+                    name="username"
+                    onChange={handleInput}
                     label="User Name"
                     type="text"
                     required
@@ -123,6 +154,8 @@ const TeacherLogin = () => {
                     className="w-10 h-10 p-1 rounded-full bg-white border text-center"
                   />
                   <input
+                    name="password"
+                    onChange={handleInput}
                     label="Password"
                     type="password"
                     placeholder="Password"
@@ -130,18 +163,17 @@ const TeacherLogin = () => {
                     className="w-[340px] h-[38px] px-4 py-2 text-[#797979] bg-[#F9F7F7] border border-gray-300 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500"
                   />
                 </div>
-              </form>
-              <div className="mb-6">
-                <Link href="/dashboard/student">
-                  <ButtonBlue
-                    text="Sign in"
-                    borderRadius="20px"
-                    height="40px"
-                    width="120px"
-                  />
-                </Link>
               </div>
-            </div>
+              <div className="mb-6">
+                <ButtonBlue
+                  text="Sign in"
+                  type="submit"
+                  borderRadius="20px"
+                  height="40px"
+                  width="120px"
+                />
+              </div>
+            </form>
             {/* End of Form */}
             <Link href="/signup/student" className="text-[#0093EF] ml-52">
               Forget Password?
@@ -153,4 +185,4 @@ const TeacherLogin = () => {
   );
 };
 
-export default TeacherLogin;
+export default StudentLogin;

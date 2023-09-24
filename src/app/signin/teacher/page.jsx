@@ -1,8 +1,34 @@
+"use client";
+
 import { ButtonBlue, ButtonWhite, Header } from "@/components";
 import Image from "next/image";
 import Link from "next/link";
+import axios from "axios";
+import { useState } from "react";
 
 const TeacherLogin = () => {
+  //Axios Form Handling POSt START
+  const [post, setPost] = useState({
+    username: "",
+    password: "",
+    role: "teacher",
+  });
+
+  const handleInput = (event) => {
+    setPost({ ...post, [event.target.name]: event.target.value });
+  };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const response = await axios.post(
+      "https://jsonplaceholder.typicode.com/posts",
+      post
+    );
+    console.log(response);
+  };
+
+  //Axios Form Handling POSt END
+
   return (
     <div className="h-screen flex flex-col p-5 bg-white ">
       <Header />
@@ -83,8 +109,11 @@ const TeacherLogin = () => {
               </Link>
             </div>
             {/* Form */}
-            <div className=" flex flex-col items-center gap-8">
-              <form className="flex flex-col gap-4">
+            <form
+              className=" flex flex-col items-center gap-8"
+              onSubmit={handleSubmit}
+            >
+              <div className="flex flex-col gap-4">
                 <div className="flex gap-5  ">
                   <svg
                     width="24"
@@ -105,6 +134,8 @@ const TeacherLogin = () => {
 
                   <input
                     label="User Name"
+                    onChange={handleInput}
+                    name="username"
                     type="text"
                     required
                     placeholder="Name"
@@ -121,25 +152,25 @@ const TeacherLogin = () => {
                   />
                   <input
                     label="Password"
+                    onChange={handleInput}
+                    name="password"
                     type="password"
                     placeholder="Password"
                     required
                     className="w-[340px] h-[38px] px-4 py-2 text-[#797979] bg-[#F9F7F7] border border-gray-300 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500"
                   />
                 </div>
-              </form>
-              <div className="mb-6">
-                <Link href="/dashboard/teacher">
-                  <ButtonBlue
-                    text="Sign in"
-                    type="submit"
-                    borderRadius="20px"
-                    height="40px"
-                    width="120px"
-                  />
-                </Link>
               </div>
-            </div>
+              <div className="mb-6">
+                <ButtonBlue
+                  text="Sign in"
+                  type="submit"
+                  borderRadius="20px"
+                  height="40px"
+                  width="120px"
+                />
+              </div>
+            </form>
             {/* End of Form */}
             <Link href="/signup/teacher" className="text-[#0093EF] ml-52">
               Forget Password?

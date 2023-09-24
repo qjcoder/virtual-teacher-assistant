@@ -1,8 +1,34 @@
+"use client";
 import { ButtonBlue, ButtonWhite, Header } from "@/components";
+import axios from "axios";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
-const Register = () => {
+const StudentSignup = () => {
+  //Axios Form Handling POSt START
+  const [post, setPost] = useState({
+    username: "",
+    email: "",
+    password: "",
+    confirmPassword: "",
+    role: "student",
+  });
+
+  const handleInput = (event) => {
+    setPost({ ...post, [event.target.name]: event.target.value });
+  };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const response = await axios.post(
+      "https://jsonplaceholder.typicode.com/posts",
+      post
+    );
+    console.log(response);
+  };
+
+  //Axios Form Handling POSt END
   return (
     <div className="h-screen flex flex-col p-5 bg-white ">
       <Header />
@@ -86,8 +112,11 @@ const Register = () => {
               </Link>
             </div>
             {/* Form */}
-            <div className=" flex flex-col items-center gap-8">
-              <form className="flex flex-col gap-4 items-center">
+            <form
+              onSubmit={handleSubmit}
+              className=" flex flex-col items-center gap-8"
+            >
+              <div className="flex flex-col gap-4 items-center">
                 <div className="flex justify-center-center gap-5  ">
                   <svg
                     width="24"
@@ -108,7 +137,9 @@ const Register = () => {
 
                   <input
                     label="User Name"
+                    name="username"
                     type="text"
+                    onChange={handleInput}
                     required
                     placeholder="Name"
                     className="w-[340px] h-[38px] px-4 py-2 text-[#797979] bg-[#F9F7F7] border border-gray-300 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500"
@@ -133,6 +164,8 @@ const Register = () => {
                   </svg>
 
                   <input
+                    name="email"
+                    onChange={handleInput}
                     type="email"
                     placeholder="Email"
                     required
@@ -150,6 +183,8 @@ const Register = () => {
                     className="w-10 h-10 p-1 rounded-full bg-white border text-center"
                   />
                   <input
+                    name="password"
+                    onChange={handleInput}
                     type="password"
                     placeholder="Password"
                     required
@@ -167,6 +202,8 @@ const Register = () => {
                     className=" -rotate-180 w-10 h-10 p-1 rounded-full bg-white border text-center"
                   />
                   <input
+                    name="confirmPassword"
+                    onChange={handleInput}
                     type="password"
                     placeholder="Confirm Password"
                     required
@@ -185,8 +222,8 @@ const Register = () => {
                     />
                   </div>
                 </div>
-              </form>
-            </div>
+              </div>
+            </form>
             {/* End of Form */}
             <p>
               Already have an account? {""}
@@ -201,4 +238,4 @@ const Register = () => {
   );
 };
 
-export default Register;
+export default StudentSignup;
