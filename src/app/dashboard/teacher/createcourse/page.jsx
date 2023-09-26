@@ -43,14 +43,7 @@ const CreateCourse = () => {
               </h1>
             </div>
             <div className="flex flex-col gap-4 mt-5  ">
-              <div className="flex  ">
-                {/* <h1 className="flex-1 text-base font-bold text-[#CACED8]">
-                  Personal
-                </h1>
-                <h1 className="flex-1 text-base font-bold text-[#CACED8] pl-8">
-                  Contact
-                </h1> */}
-              </div>
+              <div className="flex  "></div>
 
               {/* COURSE CREATION FORM START  */}
               <form onSubmit={handleSubmit} className="flex flex-col gap-8">

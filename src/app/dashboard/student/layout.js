@@ -155,7 +155,8 @@ export default function RootLayout({ children }) {
               <Link
                 href="/dashboard/student/quiz"
                 className={
-                  currentRoute === "/dashboard/student/quiz"
+                  currentRoute === "/dashboard/student/quiz" ||
+                  currentRoute === "dashboard/student/quiz/result"
                     ? activeStyle
                     : nonActiveStyle
                 }

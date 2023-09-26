@@ -7,9 +7,6 @@ const StudentQuiz = () => {
       {/* Top Title Container Start*/}
       <div className="rounded-2xl pl-5">
         <h1 className="text-[#202020] font-bold text-[34px]">Courses</h1>
-        <p className="text-[18px] font-normal text-[#A5A5A5]">
-          Lorem ipsum dolor sit amet
-        </p>
 
         <div className=" pt-10 ">
           {/* White Background Container  Start*/}
