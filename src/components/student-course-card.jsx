@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import { ButtonBlue } from "../components/index";
+import Link from "next/link";
 
 const StudentCourseCard = () => {
   return (
@@ -24,15 +25,18 @@ const StudentCourseCard = () => {
               - Head of Product Customer Platform Gojek Indonesia.
             </p>
           </div>
-          <ButtonBlue
-            text="Details"
-            className="text-[12px] text-center font-medium items-center justify-center  "
-            borderRadius="6px"
-            fontSize="12px"
-            fontWeight="500"
-            height="34px"
-            width="79px"
-          />
+
+          <Link href="/dashboard/student/details">
+            <ButtonBlue
+              text="Details"
+              className="text-[12px] text-center font-medium items-center justify-center  "
+              borderRadius="6px"
+              fontSize="12px"
+              fontWeight="500"
+              height="34px"
+              width="79px"
+            />
+          </Link>
         </div>
       </div>
       {/* Card End  */}

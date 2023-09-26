@@ -23,12 +23,13 @@ export default function RootLayout({ children }) {
           </div>
           <div className="flex gap-6 items-center  ">
             <Image
-              src="/profile-avatar.jpg" //Size of the discuss later
+              src="/profile-avatar.jpg"
               width={57}
               height={57}
               className="w-[57px] h-[57px] border-solid border-1 border-indigo-600 rounded-xl object-cover drop-shadow-md outline-none "
             />
             <div className="flex flex-col items-center ">
+              {/* //Replace with props.username */}
               <span className="text-base font-bold">Haseeb Ahmed</span>
               <span className="text-[#8F8F8F] text-sm font-normal">
                 Super Admin
@@ -46,7 +47,8 @@ export default function RootLayout({ children }) {
               <Link
                 href="/dashboard/teacher"
                 className={
-                  currentRoute === "/dashboard/teacher"
+                  currentRoute === "/dashboard/teacher" ||
+                  currentRoute === "/dashboard/teacher/details"
                     ? activeStyle
                     : nonActiveStyle
                 }

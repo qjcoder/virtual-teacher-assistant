@@ -29,9 +29,6 @@ const Student = () => {
     <main className="min-h-screen bg-[#F9F9F9] w-[1300px] ">
       <div className="rounded-2xl pl-5">
         <h1 className="text-[#202020] font-bold text-[34px]">Student</h1>
-        <p className="text-[18px] font-normal text-[#A5A5A5]">
-          Lorem ipsum dolor sit amet
-        </p>
 
         <div className=" pt-6 flex   ">
           <div className=" flex flex-col  pl-10 pr-28 pb-4  bg-white  rounded-3xl   ">
@@ -116,326 +113,35 @@ const Student = () => {
               </div>
 
               {/* Head */}
-              <div className="flex flex-col max-w-min max-h-min  border-[1px] border-[#CACED8]   rounded-md shadow-lg">
-                <div className="flex  justify-between h-[50px] solid border-[1px] border-[#CACED8]  pl-5 ">
-                  <div className="flex w-[50px] h-[50px] ">
-                    <div class="flex items-center  ">
-                      <input
-                        id="default-checkbox"
-                        type="checkbox"
-                        value=""
-                        class="flex w-5 h-5  text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+              <div className="flex flex-col max-w-min max-h-min  border-[1px] border-[#CACED8]   rounded-md shadow-lg mt-6">
+                <div className="flex  gap-56 items-center h-[50px] solid border-[1px] border-[#CACED8]  p-5 ">
+                  {/* //Get list of student from database  */}
+                  <h1 className="text-sm font-medium text-[#343A40]">Name</h1>
+                  <h1>Reg no</h1>
+                </div>
+                <div className="flex  justify-between items-center w-[590px] h-[70px] solid border-[1px] border-[#CACED8]  p-5 ">
+                  {/* //Get list of student from database  */}
+                  <h1 className="text-sm font-medium text-[#343A40]">Haseeb</h1>
+                  <h1>FA-19-REE-007</h1>
+                  <button>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="white"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="#DC3545"
+                      class="w-4 h-5"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0"
                       />
-                      <label
-                        for="default-checkbox"
-                        class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300 items-center"
-                      ></label>
-                    </div>
-                  </div>
-                  <div className="flex w-[203px] h-[50px] justify-between items-center ">
-                    <h1 className="text-sm font-medium text-[#343A40]">Name</h1>
-                    <div className="">
-                      <svg
-                        class="w-3 h-3 text-gray-800 dark:text-white rotate-180"
-                        aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="#28A745"
-                        viewBox="0 0 16 10"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="m1.707 2.707 5.586 5.586a1 1 0 0 0 1.414 0l5.586-5.586A1 1 0 0 0 13.586 1H2.414a1 1 0 0 0-.707 1.707Z"
-                        />
-                      </svg>
-                      <svg
-                        class="w-3 h-3 text-gray-800 dark:text-white "
-                        aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="#EAEAEA"
-                        viewBox="0 0 16 10"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="m1.707 2.707 5.586 5.586a1 1 0 0 0 1.414 0l5.586-5.586A1 1 0 0 0 13.586 1H2.414a1 1 0 0 0-.707 1.707Z"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                  <div className="flex w-[328px] h-[50px] justify-between items-center pl-20  gap-16">
-                    <h1 className="flex-1 ">Reg no</h1>
-                    <div className="flex-1">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="white"
-                        viewBox="0 0 24 24"
-                        stroke-width="2"
-                        stroke="#DC3545"
-                        class="w-4 h-5"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0"
-                        />
-                      </svg>
-                    </div>
-                  </div>
+                    </svg>
+                  </button>
                 </div>
+
                 {/* Repeat for students */}
-                <div className=" flex max-w-min h-[50px]  border-[1px] border-[#CACED8] outline-none px-5 ">
-                  <div className="flex  justify-between gap-8 ">
-                    <div className="flex w-[50px] h-[50px] ">
-                      <div class="flex items-center  ">
-                        <input
-                          id="default-checkbox"
-                          type="checkbox"
-                          value=""
-                          class="flex w-5 h-5  text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-                        />
-                        <label
-                          for="default-checkbox"
-                          class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300 items-center"
-                        ></label>
-                      </div>
-                    </div>
-                    <div className="flex w-[203px] h-[50px] justify-between items-center ">
-                      <h1 className="text-sm font-normal text-[#6C757D]">
-                        Haseeb
-                      </h1>
-                    </div>
-                    <div className="flex w-[328px] h-[50px] justify-between items-center pl-24  gap-16">
-                      <p className="text-[11px] font-normal text-[#343A40]">
-                        FA19-BSE-078
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className=" flex max-w-min h-[50px]  border-[1px] border-[#CACED8] outline-none px-5 ">
-                  <div className="flex  justify-between gap-8 ">
-                    <div className="flex w-[50px] h-[50px] ">
-                      <div class="flex items-center  ">
-                        <input
-                          id="default-checkbox"
-                          type="checkbox"
-                          value=""
-                          class="flex w-5 h-5  text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-                        />
-                        <label
-                          for="default-checkbox"
-                          class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300 items-center"
-                        ></label>
-                      </div>
-                    </div>
-                    <div className="flex w-[203px] h-[50px] justify-between items-center ">
-                      <h1 className="text-sm font-normal text-[#6C757D]">
-                        Haseeb
-                      </h1>
-                    </div>
-                    <div className="flex w-[328px] h-[50px] justify-between items-center pl-24  gap-16">
-                      <p className="text-[11px] font-normal text-[#343A40]">
-                        FA19-BSE-078
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className=" flex max-w-min h-[50px]  border-[1px] border-[#CACED8] outline-none px-5 ">
-                  <div className="flex  justify-between gap-8 ">
-                    <div className="flex w-[50px] h-[50px] ">
-                      <div class="flex items-center  ">
-                        <input
-                          id="default-checkbox"
-                          type="checkbox"
-                          value=""
-                          class="flex w-5 h-5  text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-                        />
-                        <label
-                          for="default-checkbox"
-                          class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300 items-center"
-                        ></label>
-                      </div>
-                    </div>
-                    <div className="flex w-[203px] h-[50px] justify-between items-center ">
-                      <h1 className="text-sm font-normal text-[#6C757D]">
-                        Haseeb
-                      </h1>
-                    </div>
-                    <div className="flex w-[328px] h-[50px] justify-between items-center pl-24  gap-16">
-                      <p className="text-[11px] font-normal text-[#343A40]">
-                        FA19-BSE-078
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className=" flex max-w-min h-[50px]  border-[1px] border-[#CACED8] outline-none px-5 ">
-                  <div className="flex  justify-between gap-8 ">
-                    <div className="flex w-[50px] h-[50px] ">
-                      <div class="flex items-center  ">
-                        <input
-                          id="default-checkbox"
-                          type="checkbox"
-                          value=""
-                          class="flex w-5 h-5  text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-                        />
-                        <label
-                          for="default-checkbox"
-                          class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300 items-center"
-                        ></label>
-                      </div>
-                    </div>
-                    <div className="flex w-[203px] h-[50px] justify-between items-center ">
-                      <h1 className="text-sm font-normal text-[#6C757D]">
-                        Haseeb
-                      </h1>
-                    </div>
-                    <div className="flex w-[328px] h-[50px] justify-between items-center pl-24  gap-16">
-                      <p className="text-[11px] font-normal text-[#343A40]">
-                        FA19-BSE-078
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className=" flex max-w-min h-[50px]  border-[1px] border-[#CACED8] outline-none px-5 ">
-                  <div className="flex  justify-between gap-8 ">
-                    <div className="flex w-[50px] h-[50px] ">
-                      <div class="flex items-center  ">
-                        <input
-                          id="default-checkbox"
-                          type="checkbox"
-                          value=""
-                          class="flex w-5 h-5  text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-                        />
-                        <label
-                          for="default-checkbox"
-                          class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300 items-center"
-                        ></label>
-                      </div>
-                    </div>
-                    <div className="flex w-[203px] h-[50px] justify-between items-center ">
-                      <h1 className="text-sm font-normal text-[#6C757D]">
-                        Haseeb
-                      </h1>
-                    </div>
-                    <div className="flex w-[328px] h-[50px] justify-between items-center pl-24  gap-16">
-                      <p className="text-[11px] font-normal text-[#343A40]">
-                        FA19-BSE-078
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className=" flex max-w-min h-[50px]  border-[1px] border-[#CACED8] outline-none px-5 ">
-                  <div className="flex  justify-between gap-8 ">
-                    <div className="flex w-[50px] h-[50px] ">
-                      <div class="flex items-center  ">
-                        <input
-                          id="default-checkbox"
-                          type="checkbox"
-                          value=""
-                          class="flex w-5 h-5  text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-                        />
-                        <label
-                          for="default-checkbox"
-                          class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300 items-center"
-                        ></label>
-                      </div>
-                    </div>
-                    <div className="flex w-[203px] h-[50px] justify-between items-center ">
-                      <h1 className="text-sm font-normal text-[#6C757D]">
-                        Haseeb
-                      </h1>
-                    </div>
-                    <div className="flex w-[328px] h-[50px] justify-between items-center pl-24  gap-16">
-                      <p className="text-[11px] font-normal text-[#343A40]">
-                        FA19-BSE-078
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className=" flex max-w-min h-[50px]  border-[1px] border-[#CACED8] outline-none px-5 ">
-                  <div className="flex  justify-between gap-8 ">
-                    <div className="flex w-[50px] h-[50px] ">
-                      <div class="flex items-center  ">
-                        <input
-                          id="default-checkbox"
-                          type="checkbox"
-                          value=""
-                          class="flex w-5 h-5  text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-                        />
-                        <label
-                          for="default-checkbox"
-                          class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300 items-center"
-                        ></label>
-                      </div>
-                    </div>
-                    <div className="flex w-[203px] h-[50px] justify-between items-center ">
-                      <h1 className="text-sm font-normal text-[#6C757D]">
-                        Haseeb
-                      </h1>
-                    </div>
-                    <div className="flex w-[328px] h-[50px] justify-between items-center pl-24  gap-16">
-                      <p className="text-[11px] font-normal text-[#343A40]">
-                        FA19-BSE-078
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className=" flex max-w-min h-[50px]  border-[1px] border-[#CACED8] outline-none px-5 ">
-                  <div className="flex  justify-between gap-8 ">
-                    <div className="flex w-[50px] h-[50px] ">
-                      <div class="flex items-center  ">
-                        <input
-                          id="default-checkbox"
-                          type="checkbox"
-                          value=""
-                          class="flex w-5 h-5  text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-                        />
-                        <label
-                          for="default-checkbox"
-                          class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300 items-center"
-                        ></label>
-                      </div>
-                    </div>
-                    <div className="flex w-[203px] h-[50px] justify-between items-center ">
-                      <h1 className="text-sm font-normal text-[#6C757D]">
-                        Haseeb
-                      </h1>
-                    </div>
-                    <div className="flex w-[328px] h-[50px] justify-between items-center pl-24  gap-16">
-                      <p className="text-[11px] font-normal text-[#343A40]">
-                        FA19-BSE-078
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className=" flex max-w-min h-[50px]  border-[1px] border-[#CACED8] outline-none px-5 ">
-                  <div className="flex  justify-between gap-8 ">
-                    <div className="flex w-[50px] h-[50px] ">
-                      <div class="flex items-center  ">
-                        <input
-                          id="default-checkbox"
-                          type="checkbox"
-                          value=""
-                          class="flex w-5 h-5  text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-                        />
-                        <label
-                          for="default-checkbox"
-                          class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300 items-center"
-                        ></label>
-                      </div>
-                    </div>
-                    <div className="flex w-[203px] h-[50px] justify-between items-center ">
-                      <h1 className="text-sm font-normal text-[#6C757D]">
-                        Haseeb
-                      </h1>
-                    </div>
-                    <div className="flex w-[328px] h-[50px] justify-between items-center pl-24  gap-16">
-                      <p className="text-[11px] font-normal text-[#343A40]">
-                        FA19-BSE-078
-                      </p>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>

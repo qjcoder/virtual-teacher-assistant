@@ -10,6 +10,7 @@ const CreateCourse = () => {
     teacher_name: "",
     institute_name: "",
     course_description: "",
+    course_image: "",
   });
 
   const handleInput = (event) => {
@@ -30,9 +31,6 @@ const CreateCourse = () => {
     <main className="min-h-screen bg-[#F9F9F9]  ">
       <div className="rounded-2xl pl-5">
         <h1 className="text-[#202020] font-bold text-[34px]">Create Course</h1>
-        <p className="text-[18px] font-normal text-[#A5A5A5]">
-          Lorem ipsum dolor sit amet
-        </p>
 
         {/* <Successcart /> */}
 
@@ -46,12 +44,12 @@ const CreateCourse = () => {
             </div>
             <div className="flex flex-col gap-4 mt-5  ">
               <div className="flex  ">
-                <h1 className="flex-1 text-base font-bold text-[#CACED8]">
+                {/* <h1 className="flex-1 text-base font-bold text-[#CACED8]">
                   Personal
                 </h1>
                 <h1 className="flex-1 text-base font-bold text-[#CACED8] pl-8">
                   Contact
-                </h1>
+                </h1> */}
               </div>
 
               {/* COURSE CREATION FORM START  */}
@@ -112,6 +110,13 @@ const CreateCourse = () => {
                     />
                   </div>
                 </div>
+                <input
+                  type="file"
+                  name="course_image"
+                  onChange={handleInput}
+                  required
+                  label="Image"
+                />
                 <ButtonBlue
                   text="Save"
                   type="submit"

@@ -7,9 +7,6 @@ const Question = () => {
       {/* Top Title Container Start*/}
       <div className="rounded-2xl pl-5">
         <h1 className="text-[#202020] font-bold text-[34px]">Generate Quiz</h1>
-        <p className="text-[18px] font-normal text-[#A5A5A5]">
-          Lorem ipsum dolor sit amet
-        </p>
 
         <div className="flex">
           {/* White Background Container  Start*/}
@@ -26,6 +23,7 @@ const Question = () => {
                   height="42px"
                   width="128px"
                   borderColor="#26B893"
+                  color="white"
                 />
               </Link>
               <ButtonBlue
@@ -45,14 +43,8 @@ const Question = () => {
                   borderRadius="1px"
                   height="40px"
                   width="152px"
+                  color="white"
                 />
-                <div className="flex ">
-                  <input
-                    type="text"
-                    required
-                    className="mb-10 w-[295px] h-[40px] rounded-xl border-[2px] solid border-[#CACED8] outline-none pl-4 "
-                  />
-                </div>
               </div>
             </form>
             {/* Question with Question #  Start*/}

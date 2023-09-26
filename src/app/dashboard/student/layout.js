@@ -44,6 +44,32 @@ export default function RootLayout({ children }) {
             </div>
             <div className="flex  flex-col ">
               <Link
+                href="/dashboard/student"
+                className={
+                  currentRoute === "/dashboard/student" ||
+                  currentRoute === "/dashboard/student/details"
+                    ? activeStyle
+                    : nonActiveStyle
+                }
+              >
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10 6V0H18V6H10ZM0 10V0H8V10H0ZM10 18V8H18V18H10ZM0 18V12H8V18H0ZM2 8H6V2H2V8ZM12 16H16V10H12V16ZM12 4H16V2H12V4ZM2 16H6V14H2V16Z"
+                    fill="#515151"
+                  />
+                </svg>
+
+                <h1 className="text-slate-900 group-hover:text-white text-base font-medium">
+                  Dashboard
+                </h1>
+              </Link>
+              <Link
                 href="/dashboard/student/course"
                 className={
                   currentRoute === "/dashboard/student/course"

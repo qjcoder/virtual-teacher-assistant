@@ -159,9 +159,9 @@ const TeacherLogin = () => {
         </div>
       </form>
       {/* End of Form */}
-      <Link href="/auth/teacher-signup" className="text-[#0093EF] ml-52">
+      {/* <Link href="/auth/teacher-signup" className="text-[#0093EF] ml-52">
         Forget Password?
-      </Link>
+      </Link> */}
       <div className="flex mt-7 gap-1">
         <p className="text-white">Don't have account?</p>
 

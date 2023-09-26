@@ -1,12 +1,11 @@
 "use client";
-
-import { ButtonBlue, ButtonWhite, Header } from "@/components";
+import { ButtonBlue, ButtonWhite } from "@/components";
 import axios from "axios";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
-const TeacherSignup = () => {
+export const TeacherSignup = () => {
   //Axios Form Handling POSt START
   const [post, setPost] = useState({
     username: "",
@@ -24,13 +23,9 @@ const TeacherSignup = () => {
     event.preventDefault();
     console.log(post);
 
-    // /CHECK FOR PASSWORD MATCH /
-
     if (password !== confirmPassword) {
       return "Please enter your password";
     }
-
-    // /CHECK FOR PASSWORD MATCH /
     const response = await axios.post(
       "https://jsonplaceholder.typicode.com/posts",
       post
@@ -228,5 +223,3 @@ const TeacherSignup = () => {
     </div>
   );
 };
-
-export default TeacherSignup;
