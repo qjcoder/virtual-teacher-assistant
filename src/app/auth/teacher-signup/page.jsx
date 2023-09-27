@@ -4,10 +4,11 @@ import { ButtonBlue, ButtonWhite, Header } from "@/components";
 import axios from "axios";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 const TeacherSignup = () => {
-  //Axios Form Handling POSt START
+  const router = useRouter();
   const [post, setPost] = useState({
     username: "",
     email: "",
@@ -22,19 +23,26 @@ const TeacherSignup = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    console.log(post);
 
     // /CHECK FOR PASSWORD MATCH /
 
-    if (password !== confirmPassword) {
-      return "Please enter your password";
+    if (post.password !== post.confirmPassword) {
+      console.log("Password mismatch");
+      return;
     }
-
+    console.log(post);
     // /CHECK FOR PASSWORD MATCH /
-    const response = await axios.post(
-      "https://jsonplaceholder.typicode.com/posts",
-      post
-    );
+    try {
+      const response = await axios.post(
+        "https://jsonplaceholder.typicode.com/posts",
+        post
+      );
+      console.log("Hishsjd");
+
+      router.push("/auth/teacher-signin");
+    } catch (error) {
+      console.log(error.message);
+    }
   };
 
   //Axios Form Handling POSt END

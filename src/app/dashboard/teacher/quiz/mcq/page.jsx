@@ -44,7 +44,7 @@ const MCQ = () => {
                   onChange={handleInput}
                   placeholder="Question Number"
                   required
-                  class="min-w-max h-[44px] rounded-lg border-[2px] solid border-[#CACED8] outline-none pl-4"
+                  className="min-w-max h-[44px] rounded-lg border-[2px] solid border-[#CACED8] outline-none pl-4"
                 />
               </div>
               <select
@@ -52,7 +52,7 @@ const MCQ = () => {
                 placeholder="Question Type"
                 onChange={handleInput}
                 required
-                class="flex  text-base font-medium w-[344px] h-[44px] rounded-lg border-[2px] solid border-[#CACED8] outline-none pl-4"
+                className="flex  text-base font-medium w-[344px] h-[44px] rounded-lg border-[2px] solid border-[#CACED8] outline-none pl-4"
               >
                 <option>MCQ</option>
                 <option>True Flase</option>
