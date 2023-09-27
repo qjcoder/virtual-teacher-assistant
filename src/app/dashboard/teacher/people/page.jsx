@@ -139,8 +139,8 @@ const Student = () => {
               </div>
 
               {/* Head */}
-              <div className="flex flex-col max-w-min max-h-min  border-[1px] border-[#CACED8]   rounded-md shadow-lg mt-6">
-                <div className="flex  gap-56 items-center h-[50px] solid border-[1px] border-[#CACED8]  p-5 ">
+              <div className="flex flex-col w-[589px] max-h-min  border-[1px] border-[#CACED8]   rounded-md shadow-lg mt-6">
+                <div className="flex  justify-between pr-52 items-center h-[50px] solid border-[1px] border-[#CACED8]  p-5 ">
                   {/* //Get list of student from database  */}
                   <h1 className="text-sm font-medium text-[#343A40]">Name</h1>
                   <h1>Reg no</h1>
@@ -150,7 +150,7 @@ const Student = () => {
                   return (
                     <div
                       key={student.key}
-                      className="flex  justify-between items-center w-[590px] h-[70px] solid border-[1px] border-[#CACED8]  p-5 "
+                      className="flex  justify-between items-center w-[589px] h-[70px] solid border-[1px] border-[#CACED8]  p-5 "
                     >
                       {/* //Get list of student from database  */}
                       <h1 className="text-sm font-medium text-[#343A40]">
